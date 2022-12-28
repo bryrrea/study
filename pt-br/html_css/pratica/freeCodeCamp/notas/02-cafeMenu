@@ -1,0 +1,46 @@
+# **Cafe Menu**  
+
+## **1. Objetivo**  
+Este projeto foi criado pelo Free Code Camp para ensinar CSS básico.  
+
+## **2. Estrutura HTML**  
+
+- Dentro do elemento `<head></head>`, temos um elemento `<link />` para juntar os arquivos CSS e HTML;;
+- - Tudo foi colocado dentro de um elemento `<div>` (para facilitar o design do layout);;
+- Dentro do `<main>>/main>`, temos um cabeçalho para o menu e dois elementos `<section></section>` (um para os cafés vendidos e outro para as sobremesas vendidas). Para cada `<section></section>` temos:
+    - Um texto como cabeçalho para cada secção (café ou sobremesa);
+    - Uma imagem/ícone para ilustrar a secção;
+    - Oito elementos `<p></p>` (quatro para especificar o nome do café ou da sobremesa, e quatro para especificar o preço).
+- O `<main></main>` será colocado entre dois elementos `<hr />`. Esse elemento funciona como uma "linha" para dividir as seções do menu;
+- Um `<footer></footer>` com o link para o site do Free Code Camp.  
+
+## **3. Documento CSS**  
+O arquivo "02-cafeMenu" contém todos os estilos CSS para o menu e está vinculado ao arquivo HTML na 8ª linha do HTML.  
+
+### **3.1. Estilizando o background**  
+O projeto original tem uma imagem de fundo. Como a imagem deve aparecer em toda a página, devemos usar a propriedade *"background-image"* no elemento <body></body>` para definir uma imagem de fundo usando a função *"url()"* como valor. Esta função recebe como atributo o local em que temos nossa imagem.  
+O `<body></body>` recebe outros dois atributos a serem mostrados em toda a página: *"font-family"* e *"padding"*. O *"font-family"* estabelecerá a mesma fonte em todo documento, e o *"padding"* é a distância entre o conteúdo e suas bordas. Neste projeto, utilizou-se `padding: 15px;` em todos os sentidos.  
+
+### **3.2. Estilização do texto**  
+Definiu-se que os parágrafos teriam uma fonte de 18px, enquanto o cabeçalho `<h1></h1>` teria uma fonte de 40px e o cabeçalho `<h2></h2>` teria uma fonte de 30px. Foi definido que o `<body></body>` apresentaria uma fonte do tipo sans-serif, mas sem família definida. Já para os cabeçalhos, definiu-se fonte do tipo serif e família *"Impact"*. Os elementos das classes *"flavor"* e *"desserts"* foram alinhados à esquerda, enquanto os elementos de texto com a classe *"price"* foram alinhados à direita, para ficar que nem um cardápio mesmo. Importante ressaltar que os elementos `<p></p>` dentro dos `<article></article>` foram dispostos lado a lado na escrita HTML para que fosse possível definir uma largura de 50% para as classes *"flavor"* e *"price"*. No final, a classe *"flavor"* foi definida para ocupar 75% da largura da `<div>`, enquanto a classe *"price"* foi definida para ocupar os outros 25%, visto que esta última utiliza muito menos caracteres que a *"flavor"*.  
+
+### **3.3. Estilizando a `<div>`**  
+Inicialmente, definiu-se uma largura de 80% da `<div class="menu">`  em relação ao seu elemento pai (`<body>`). Mesmo que não esteja visível na tela, esta `<div>` está ocupando 80% da largura da viewport. O texto foi alinhado no centro da `<div>` (`text-align: center;`), assim como as imagens/ícones. A ideia utilizada para centralizar a `<div>` foi a mesma para centralizar as imagens *dentro* da `<div>`: definir como automática as margens da direita e esquerda (`margin-right: auto; margin-left: auto;`). Como estamos trabalhando com `display: block;`, essa ideia é bastante válida para centralizar elementos na tela e em elementos pai.
+
+### **3.4. Pseudo-classes**  
+No projeto original, utilizou-se três pseudo-classes para estilizar o links do footer: ":visited", ":hover", e ":active". A primeira foi definida para mudar a cor do texto para preto depois de clicado; a segunda foi definida para mudar a cor do link para marrom quando passarmos o ponteiro do mouse sobre o link; e a terceira foi definida para marrom quando o link estiver ativo (ainda não clicado).  
+
+### **3.5. Propriedade Display**  
+A propriedade *"display"* é uma das propriedades mais importantes do CSS. Ela irá definir o tipo de renderização da caixa de um elemento. Ela pode obter muitos valores, em que "inline-block", "flex", "inline-flex" e "grid" são usados mais comumente. Esta propriedade aceita um valor "none", o que significa que o elemento não será mostrado na tela. O valor padrão é "block", o que significa que cada elemento ocupa toda a largura da linha. Podemos ver [aqui](https://developer.mozilla.org/en-US/docs/Web/CSS/display) a tabela com todos os valores para a propriedade *"display"*.  
+
+### **3.6. Margens e preenchimentos**  
+Vale lembrar que o `<body>` do viewport do navegador já tem um *"margin"* setado para 8px. Por isso, é comum "reiniciar" a margem do `<body>` antes de escrevermos qualquer outra propriedade CSS. Para isso, é só setar as margens para zero.  
+O *"padding"*, por outro lado, é o espaço entre o elemento e suas bordas. O `<body>` do viewport também tem um *"padding"* definido para 8px, e é comum "reiniciar" os paddings do `<body>` antes de escrever qualquer outra propriedade CSS, definindo-o para zero (assim como as margens). Neste projeto, o `<body></body>` e a `<div class="menu">` tiveram um padding definido em 20px.  
+Para aumentar o espaçamento entre o elemento `<h1>` e o elemento `<p>` logo abaixo dele, definiu-se um `margin-bottom: 15px;` para o elemento `<h1>`, "empurrando" o elemento `<p>` 15px para baixo. Já os `<article class="item">` tiveram as propriedades `margin-top` e `margin-bottom` definidas em 5px, isto é, cada `<article class="item">` "empurra" os elementos acima e abaixo em 5px. Já o elemento `<p class="address">` teve seu `margin-bottom` definido em 5px. O elemento `<hr class="bottom-line">`, por sua vez, teve um `margin-top: 25px;`, buscando "afastar" a `<section>` anterior 25px para cima.  
+
+### **3.7. Estilizando imagens**  
+Há três imagens utilizadas nesse projeto: uma no fundo da tela (já abordada) e outras duas nas secções que tratam sobre os cafés e as sobremesas. Essas duas imagens das secções são, na verdade, ícones para ilustrar/representar cafés e sobremesas. Ambas foram definida com `display: block;` para ficarem logo abaixo dos cabeçalhos. Ainda, para que fossem centralizadas, definiu-se `margin-right` e `margin-left` como "auto", visto que essa é uma ideia válida para centralizar elementos com `display: block;`.  
+Aqui, há uma ideia interessante: a propriedade `margin-top` das imagens foi definida como -25px para diminuir a distância entre o elemento `<h2>` e o ícone representativo.  
+
+## **4. Conclusão**  
+Acredito que este projeto foi um bom começo para ver como o CSS funciona. Não é difícil entender os conceitos ensinados, e acredito que seja amigável para os iniciantes.

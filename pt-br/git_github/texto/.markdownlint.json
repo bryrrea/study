@@ -1,0 +1,23 @@
+{
+  "MD033": {
+    "allowed_elements": [
+      "align",
+      "h1",
+      "h2",
+      "h3",
+      "h4",
+      "h5",
+      "sup",
+      "sub",
+      "img",
+      "p"
+    ]
+  },
+
+  "MD013": {
+    "strict": true,
+    "code_blocks": false,
+    "tables": false,
+    "headings": false
+  }
+}

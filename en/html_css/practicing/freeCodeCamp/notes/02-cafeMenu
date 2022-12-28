@@ -1,0 +1,46 @@
+# **Cafe Menu**  
+
+## **1. Objective**  
+This simple project was created by Free Code Camp to teach CSS basics.  
+
+## **2. HTML Structure**  
+
+- Inside the `<head></head>`, we have a `<link />` to join CSS and HTML files;
+- Everything was placed inside a `<div>` (for designing layout proposals);
+- Inside the `<main></main>`, we have a header for the menu, and two `<section></section>` elements (one for the coffee sold and one for desserts sold). For each `<section></section>` we have:
+    - A heading to say which section (coffee or dessert);
+    - An image/icon (`<img />`) to illustrate that section;
+    - Eight `<p></p>` elements (four to specify the name of the coffee or dessert, and four to specify its price).
+- The `<main></main>` will be placed between two `<hr />` elements. It works like a "line" to break the menu sections;
+- A `<footer></footer>` with a link to Free Code Camp website.  
+
+## **3. CSS document**  
+The file "02-cafeMenu" contains all CSS styles for the menu and is linked to the HTML file on the 8th row of the HTML.  
+
+### **3.1. Background style**  
+The original project has a background image. Since the image must appear throughout the page, we must use the *"background-image"* property on the <body></body>` to set a background image by using the *"url()"* function as its value. This function takes as an attribute the location where we have our image.  
+The `<body></body>` gets two other properties to be displayed throughout the page: *"font-family"* and *"padding"*. The *"font-family"* will set the same font throughout the document, and the *"padding"* is the distance between the content and its boarders. In this project, `padding: 15px;` was used throughout.  
+
+### **3.2. Text styling**  
+It was defined that paragraphs would have an 18px font, while the header `<h1></h1>` would have a 40px font and the header `<h2></h2>` would have a 30px font. It was defined that the `<body></body>` would have a sans-serif font, but without a defined family. For the headings, a serif font and *"Impact"* family were defined. The elements of the classes *"flavor"* and *"desserts"* were aligned to the left, while the text elements with the class *"price"* were aligned to the right, to make it look like a menu. Importantly, the `<p></p>` elements within the `<article></article>` elements were arranged side by side in the HTML file so that it was possible to define a 50% width for the *"flavor"* and *"price"* classes. In the end, the *"flavor"* class was set to occupy 75% of the width of the `<div>`, while the *"price"* class was set to occupy the other 25%, since the latter uses far fewer characters than *"flavor"*.  
+
+### **3.3. Styling the `<div>`**  
+Initially, you set the width of the div to 80% of its parent element (`<body>`). Even though it is not visible on the screen, this `<div>` is taking up 80% of the viewport width. The text has been aligned in the center of the div (`text-align: center;`), as have the images/icon. The idea used to center the `<div>` was the same as for centering the images *inside* the `<div>`: set the left and right margins to auto (`margin-right: auto; margin-left: auto;`). Since we are working with `display: block;`, this idea will work for centering elements on the screen and on parent elements.  
+
+### **3.4. Pseudo-class**  
+In the original project, we used three pseudo-classes to style the `<footer>` links: ":visited", ":hover", and ":active". The first was set to change the text color to black after clicking; the second was set to change the link color to brown when we move the mouse pointer over the link; and the third was set the link color to brown when the link is active (not clicked yet).  
+
+### **3.5. Display property**  
+The *"display"* property is one of the most important properties in CSS. It will set the type of rendering box of an element. It can get many values, which "inline-block", "flex", "inline-flex" and "grid" are used more commonly. This property accepts a "none" value, which means that the element will not be showed in the screen. The standard value is "block", which means that each element occupies the entire row width. We can see the table with all values for *"display"* property [here](https://developer.mozilla.org/en-US/docs/Web/CSS/display).  
+
+### **3.6. Margin and padding**  
+Remember that the `<body>` of the browser viewport already has a *"margin"* set to 8px. Therefore, it is common to "reset" the margin of `<body>` before we write any other CSS properties. To do this, just set the margins to zero.  
+The *"padding"*, on the other hand, is the space between the element and its borders. The `<body>` viewport also has a *"padding"* set to 8px, and it is common to "reset" the paddings of the `<body>` before writing any other CSS property, by setting it to zero (as well as the margins). In this project, the `<body></body>` and the `<div class="menu">` have had padding set to 20px.  
+To increase the spacing between the `<h1>` element and the `<p>` element just below it, we set a `margin-bottom: 15px;` to the `<h1>` element, "pushing" the `<p>` element 15px down. The `<article class="item">`, on the other hand, has had the `margin-top` and `margin-bottom` properties set to 5px, that is, each `<article class="item">` "pushes" the elements above and below by 5px. The `<p class="address">` element, on the other hand, has had its `margin-bottom` set to 5px. The `<hr class="bottom-line">` element, meanwhile, had a `margin-top: 25px;`, seeking to "push" the previous `<section>` 25px up.  
+
+### **3.7. Styling images**  
+There are three images used in this project: one at the background (already covered) and two others in the sections dealing with coffees and desserts. These two images in the sections are actually icons to illustrate/represent coffees and desserts. Both were set with `display: block;` to be just below the headings. Also, to make them centered, we set `margin-right` and `margin-left` to "auto", since this is a valid idea for centering elements with `display: block;`.  
+There is an interesting idea here: the `margin-top` property of the images was set to -25px to decrease the distance between the `<h2>` element and the representative icon.  
+
+## **4. Conclusion**  
+I believe this project was a good start for see how CSS works. It is not difficult to understand the concepts taught, and I believe it is beginner-friendly.
