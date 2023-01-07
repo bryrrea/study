@@ -1,8 +1,8 @@
-# Estruturas de dados `Map()` e `Set()`  
+# 6. Estruturas de dados `Map()` e `Set()`  
 
-## 12. Estrutura de dados `Map()`  
+## 6.1. Estrutura de dados `Map()`  
 
-### 12.1. Definição  
+### 6.1.1. Definição  
 `Map()` é uma estrutura de dados em JavaScript que permite armazenar pares de chave-valor. Ela é semelhante a um objeto, mas existem algumas diferenças como:  
 
  - As chaves de uma Map podem ser qualquer valor (inclusive funções, objetos e valores primitivos), enquanto as chaves de um objeto só podem ser valores primitivos (strings ou números).
@@ -11,7 +11,7 @@
 
  - As Maps possuem métodos próprios para adicionar, remover e iterar sobre os elementos, enquanto os objetos não possuem esses métodos.  
 
-### 12.2. Sintaxe  
+### 6.1.2. Sintaxe  
 
 ```javascript
 const map = new Map();
@@ -28,28 +28,28 @@ const map = new Map([
 
 Como no `Map()` as chaves podem ser qualquer coisa, as chaves que são strings devem ser escritas entre aspas. Em objetos "comuns", todas as chaves de propriedade são strings e, por isso, não necessitam ser escritas entre aspas.  
 
-### 12.3. Adicionando elementos em um `Map()`  
+### 6.1.3. Adicionando elementos em um `Map()`  
 Utiliza-se o método `set()` para adicionar novos elementos em um `Map()`, conforme sintaxe abaixo:  
 
 ```javascript
 map.set('key3', 'value3');
 ```  
 
-### 12.4. Acessando elementos em um `Map()`  
+### 6.1.4. Acessando elementos em um `Map()`  
 Para acessar o valor de um elemento, pode-se usar o método `get()`:  
 
 ```javascript
 const value = map.get('key1');
 ```  
 
-### 12.5. Removendo elementos de um `Map()`  
+### 6.1.5. Removendo elementos de um `Map()`  
 Para remover um elemento da Map, é possível usar o método delete():  
 
 ```javascript
 map.delete('key1');
 ```  
 
-### 12.6. Iterações sobre um `Map()`  
+### 6.1.6. Iterações sobre um `Map()`  
 Para iterar sobre os elementos de uma Map, é possível usar os métodos `keys()`, `values()` e `entries()`, que retornam iteradores para as chaves, valores e entradas (pares chave-valor), respectivamente:  
 
 ```javascript
@@ -79,7 +79,7 @@ map.forEach((value, key) => {
 });
 ```
 
-### 12.7. Outros métodos mais utilizados em `Map()`  
+### 6.1.7. Outros métodos mais utilizados em `Map()`  
 
  - `size`: retorna o número de elementos (pares chave-valor) em um `Map()`.
  - `clear()`: remove todos os elementos de um `Map()`.
@@ -100,7 +100,7 @@ newMap.clear();
 console.log(newMap.size); // 0
 ```
 
-##### **'Bora praticar!**  
+#### **'Bora praticar!**  
 
  - Prática 38 - Crie um "Map" chamado "mexico" com as seguintes propriedades: id -> 24, name -> "Mexico", capital -> "Mexico City", neighbors -> ["USA", "Guatemala", "Belize"]. Em seguida, imprima o objeto no terminal. Em seguida, altere o "id" para 25 e adicione "Honduras" à lista de vizinhos de "mexico". Finalmente, imprima "mexico" no terminal novamente. [Solução](/pt-br/js/praticando/p38.js)
 
@@ -132,20 +132,20 @@ console.log(newMap.size); // 0
 
 ---  
 
-## 13. `Set()` Data Structure
+## 6.2. `Set()` Data Structure
 
-### 13.1. Definição  
+### 6.2.1. Definição  
 
 `Set()` é uma estrutura de dados do JavaScript que aceita somente valores únicos, ou seja, valores não podem ser repetidos dentro de um `Set()`. Ele funciona com qualquer tipo de dado primitivo (ou complexo).  
 Diferentemente da estrutura `Map()`, o `Set()` não trabalha com pares chave-valor. No entanto, muitos métodos utilizados com as outras duas estruturas também podem ser utilizados com `Set()`.  
 
-### 13.2. Sintaxe  
+### 6.2.2. Sintaxe  
 
 ```javascript
 const newSet = new Set();
 ```  
 
-### 13.3. Adicionando valores em um `Set()`  
+### 6.2.3. Adicionando valores em um `Set()`  
 
 Podemos adicionar valores em um `Set()` de duas formas diferentes:  
 
@@ -165,7 +165,7 @@ console.log(newSet); //Set(4) { 1, 2, 3, 4 }
 
 Como podemos observar, a saída é similar à de um `Map()`, mas apenas com valores.  
 
-### 13.4. Deletando valores de um `Set()`  
+### 6.2.4. Deletando valores de um `Set()`  
 
 Podemos deletar um ou todos os valores de um `Set()`.  
 
@@ -174,7 +174,7 @@ newSet.delete(valor);
 newSet.clear(); // deleta todos os valores
 ```  
 
-### 13.5. Verificando valores e o tamanho de um `Set()`  
+### 6.2.5. Verificando valores e o tamanho de um `Set()`  
 
 Podemos utilizar o método `has()`, como em um `Map()`.  
 
@@ -189,7 +189,7 @@ Para verificar o tamanho de um `Set()`, podemos utilizar o método `size`, como 
 console.log(newSet.size); // 4
 ```  
 
-### 13.6. Métodos `keys()`, `values()` and `entries()`  
+### 6.2.6. Métodos `keys()`, `values()` and `entries()`  
 
 São três métodos que também estão presentes no `Map()`. Entretanto, eles não funcionaram da mesma maneira em um `Set()`.  
 Como foi dito antes, `Set()` não têm um par chave-valor, uma vez que esta estrutura de dados é composta apenas por valores. Com isso em mente, o método `keys()` simplesmente retornará o **valor**, assim como o método `values()`. Mas como ele funciona com o método `entries()`?  
@@ -205,11 +205,11 @@ console.log(newSet.entries()); // { [ 1, 1 ], [ 2, 2 ], [ 3, 3 ], [ 4, 4 ], [ 5,
 
 Como é possível observar no código acima, `keys()` e `values()` retornam um objeto **iterável**, enquanto `entries()` retorna um objeto com arrays (que também são iteráveis.  
 
-### 13.7. Iterando em um `Set()`  
+### 6.2.7. Iterando em um `Set()`  
 
 Há algumas maneiras de iterar em um `Set()`. Vejamos as mais comuns.  
 
-#### 13.7.1. Loop `for...of`  
+#### 6.2.7.1. Loop `for...of`  
 
 É um loop especial criado para iterar em objetos iteráveis, como arrays, strings, e `Set()`. O loop `for...of` permite que cada elemento do `Set()` seja percorrido de forma fácil e concisa.  
 
@@ -231,7 +231,7 @@ Por outro lado, a desvantagem básica de utilizar este modo para iterar sobre um
 
  - Ele não fornece acesso ao índice ou chave do elemento atual.  
 
-#### 13.7.2. Método `forEach()`  
+#### 6.2.7.2. Método `forEach()`  
 
 Este método está disponível em muitos objetos iteráveis, incluindo o `Sets()`. Isto permite que seja passado uma callback function que será chamada para cada elemento do `Set()`.  
 
@@ -253,7 +253,7 @@ Por outro lado, as desvantagens básicas de se utilizar este método para iterar
  - Não fornece acesso ao índice ou chave do elemento atual.
  - Não permite o uso das declarações `break` ou `continue` para controlar o fluxo do loop.  
 
-#### 13.7.3. Um `for` loop normal  
+#### 6.2.7.3. Um `for` loop normal  
 
 Também é possível utilizar um `for` loop normal para iterar um `Set()`, apesar desta forma ser levemente menos concisa que o loop`for-of` ou o método `forEach()`.  
 
@@ -278,7 +278,7 @@ Por outro lado, as desvantagens básicas sobre a utilização desta forma para i
  - Não dá acesso ao valor ou chave do elemento atual.
  - Não nos permite utilizar as declarações `break` ou `continue` para controlar o fluxo do laço.
 
-##### 13.7.3.1. Método `next()`  
+#### 6.2.7.4. Método `next()`  
 O método `next()` é um método disponível em objetos iteradores, como aqueles retornados pelos métodos `keys()`, `values()`, e `entries()` de um `Set()`. Ele retorna um objeto com duas entradas: **value*** e **done***. O campo de value contém o próximo valor do iterador, e o campo done indica se o iterador atingiu ou não o fim.  
 
 ```javascript

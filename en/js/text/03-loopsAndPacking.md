@@ -1,12 +1,12 @@
-[Versão em PT-BR aqui!](/pt-br/js/textos/03-EstruturasDeRepeticaoEEmpacotamento.md)  
+[Versão em PT-BR aqui!](/pt-br/js/textos/03-EstruturasDeRepeticaoEEmpacotamento.md)
 
-# Loops and Packing  
+# 3. Loops and Packing
 
-## 8. Loops
+## 3.1. Loops
 
 Loops are structures that allows you to execute the same block of code more than once.
 
-### 8.1. The for loop
+### 3.1.1. The for loop
 
 The for loop is used with countable loops. It is commonly called "repetition structure with a variable of control". Below, we have the syntax to write a for loop.
 
@@ -18,11 +18,11 @@ for (let index = 0; index < array.length; index++) {
 
 Let's brake the code above:
 
- -   **"`let index = 0`"** is creating a variable called `"index"` and it is starting with the value (index) "0" (almost all programming languages starting the index from zero).
- -   **"`index < array.length`"** is a boolean structure to check if a condition is true or false.
- -   **"`index++`"** is incrementing the variable `"index"` by one unit. It can be incremented by more than one unit if you want.  
+- **"`let index = 0`"** is creating a variable called `"index"` and it is starting with the value (index) "0" (almost all programming languages starting the index from zero).
+- **"`index < array.length`"** is a boolean structure to check if a condition is true or false.
+- **"`index++`"** is incrementing the variable `"index"` by one unit. It can be incremented by more than one unit if you want.  
 
-### 8.2. While loop
+### 3.1.2. While loop
 
 The **while loop** is used when we have uncountable loops. It is commonly called a **"repetition structure with a logical test"**, since we need to start a variable outside the loop and increment (or decrease) it to work. Let's see it syntax below:
 
@@ -51,7 +51,7 @@ while (points > 100 === false) {
 
 In the code above, I started a variable called "points" and the loop will run when this variable **is not** greater than 100. An "if statement" was add to stop the loop when the variable comes to zero. The using of reserved word `break` is restricted to `while` and `for` loops.
 
-## 9. Packing
+## 3.2. Packing
 
 When we are creating an app, we will create some features in this. So, it is almost always a good practice to create **modules** separated from the main script. It improves the organization and maintainability of our code.  
 To use those modules that have been written outside, we need to **import** them on the main script. But, to import them in the main script, we need to export that module to be imported where we want. Let's see an example below:
@@ -105,7 +105,7 @@ console.log(randomList.creatingRandomNumbers(1, 100));
 
 I created a variable to import the modules from the script "checkingNumbers.js". I used the reserved word **"`require`"** and gave a string with the location of the script as argument. Then, I used the module "creatingRandomNumbers" to create and print on the screen a list with 10 numbers.
 
-### 9.1. Destructuring
+### 3.2.1. Destructuring
 
 Destructuring is a JavaScript expression that makes it possible to unpack values and properties from arrays and objects into distinct variables in a single line of code.
 
@@ -127,7 +127,7 @@ const food = ["🍕", "🍔", "🍗", "🥗", "🍵"];
 const [pizza, hamburger, chicken, salad, soup] = food;
 ```
 
-As we can see, each variable inside the array on the left side of the equals sign refers to the index of the array elements. We can ignore an array element by using just a comma (e.g. `const[pizza, , , salad, soup] = food` stocks "🍕", "🥗" and "🍵" into variables). We also can use `...rest` to group the other elements in one element called **"rest"**, like `const[pizza, hamburger, ...rest] = food` returns `pizza = "🍕"`, `hamburger = "🍔"`, and `"🍗", "🥗", "🍵"` as **"`rest`"**.  
+As we can see, each variable inside the array on the left side of the equals sign refers to the index of the array elements. We can ignore an array element by using just a comma (e.g. `const[pizza, , , salad, soup] = food` stocks "🍕", "🥗" and "🍵" into variables). We also can use `...rest` to group the other elements in one element called **"rest"**, like `const[pizza, hamburger, ...rest] = food` returns `pizza = "🍕"`, `hamburger = "🍔"`, and `"🍗", "🥗", "🍵"` as **"`rest`"**.
 We can change a value inside a list in te same way:
 
 ```javascript
@@ -158,11 +158,10 @@ And we can chance a variable name if we want to:
 
 ```javascript
 const { strawberry: berry } = fruits;
-```  
+```
 
-##### **Let's practice!**
+### 3.2.2. **Let's practice!**
 
- - Practice 10: Create a program to calculate the multiplication table of a number. [My solution](/en/js/practicing/11-p10.js)
+- Practice 10: Create a program to calculate the multiplication table of a number. [My solution](/en/js/practicing/11-p10.js)
 
- - Practice 11: Create a program that runs through a list of numbers to return only the even numbers in this list. [My solution](/en/js/practicing/12-p11.js)
- 
+- Practice 11: Create a program that runs through a list of numbers to return only the even numbers in this list. [My solution](/en/js/practicing/12-p11.js)

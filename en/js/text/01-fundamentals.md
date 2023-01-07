@@ -1,10 +1,10 @@
 [Versão em PT-BR aqui!](/pt-br/js/textos/01-fundamentos.md)  
 
-# Fundamentals
+# 1. Fundamentals
 
-## 1. Programming Basics
+## 1.1. Programming Basics
 
-### 1.1. Commenting a code
+### 1.1.1. Commenting a code
 
 One of the first things that you can learn about good programming practices is that your code **ALWAYS** needs to be commented. However, you only need to comment something non-trivial, as the comment lines would "pollute" your code.  
 That said, you can comment out a row in JavaScript by writing your text after "//". If you want to comment more than just a row, you should write your text between "/\*\*/".  
@@ -20,7 +20,7 @@ console.log("Hello, World"); // This is a comment on just one row
 console.log("Hello, World, again!");
 ```
 
-### 1.2. Hello, world!
+### 1.1.2. Hello, world
 
 The "Hello, World" thing is a programming mantra. It will almost always be your first line of code.  
 To do this, you need to know how the programming language you use does to display something on the user's screen. In JavaScript, you use "console.log()" command. As you can see above, the text will be placed inside brackets and quotation marks. This text is called **string** in programming.
@@ -30,7 +30,7 @@ To do this, you need to know how the programming language you use does to displa
 We have single quotation mark (') and double quotation mark ("). Which one should we use?  
 Some "human languages" (like English, e.g.) seem to use more single quotation marks than other languages (like PT-BR, e.g.). As you can saw above, I used "... user's screen." besides "...screen of the user.". Since English is the "universal human language", I will use double quotation marks to express strings, even though some programmers advise to use single quotes always, except when the string has single quotation marks (in this case, they advise to use double quotes).
 
-### 1.3. Interpreter basics
+### 1.1.2.1. Interpreter basics
 
 JavaScript is an interpreted language. The parser will "read" your code from left to right, from top to bottom, and the result of executing the code is immediately returned.  
 That means if your code have some error between rows, everything before the error will be interpreted, and everything after the error will not be interpreted.
@@ -44,7 +44,7 @@ console.log("What do you think about programming?");
 
 The above code will run and display the first two lines to the user, but will return an error on the third line and will not display the fourth line because execution will stop at line 3.
 
-## 2. Code sentences and blocks
+## 1.2. Code sentences and blocks
 
 A code sentence is a single code. Alone, it can does something; in a code block, it will have some meaning for an implementation. In the last example, every "console.log()" is a sentence. Each one will display a message on the user's screen.  
 A code block, however, is a bunch of sentences that will run together, and when all those sentences ran together they bring up some function or feature. In JavaScript, a code block almost always will be placed between braces ({}).
@@ -61,7 +61,7 @@ if (ice_cream === 'chocolate') {
 Above, we have two blocks of code (even though each one has only one code phrase): the first one will display something if we have chocolate ice cream, and the last one will display another message if we don't have chocolate ice cream. So if statements, for and while loops (control structures) and functions are some instances we will implement blocks of code.  
 So, essentially, a code block will execute several sentences of code that together have a specific function.
 
-## 3. Declaring variables
+## 1.3. Declaring variables
 
 Nowadays, we have two ways to declare variables. For that, we use two distinct reserved words: **let** or **const**. The usage of **let** refers to a value that can be changed in the future, while the usage of **const** refers to a value that will _never_ be changed. Let's see an example:
 
@@ -73,7 +73,7 @@ const pi = 3.14;
 In the code above, the variable "name" would be changed by another name anytime, while the variable "pi" refers to a math constant named "pi", which have a value that is always the same.  
 Another important difference about declaring a variable with **let** or **const** is that using **const** assumes that you will **always** declare a value to the variable, i.e., with **let** you don't need to assign a value to the variable.
 
-## 4. Primitive data types
+## 1.4. Primitive data types
 
 We have 5 basic primitive types of data in JavaScript: **string**, **number**, **boolean**, **null** and **undefined**. This last one is almost exclusive for JavaScript.  
 A **string** is a chain of characters. It can be a person's name, a city's name, a text, a set of numbers, special characters, and so on. However, a string will **always** be written inside **quote marks** (double or single).  
@@ -83,9 +83,9 @@ A **null** refers to “nothing”, “empty” or “value unknown”, while **
 
 > Remember that we can use the `typeof` operator to see the type of a variable!
 
-## 5. Operators
+## 1.5. Operators
 
-### 5.1. Arithmetic operators
+### 1.5.1. Arithmetic operators
 
 Table 1 - Arithmetic Operators with JavaScript
 
@@ -104,7 +104,7 @@ Table 1 - Arithmetic Operators with JavaScript
 
 The precedence is like in Math: "`*`" and "/" before "+" and "-". If we have an expression with operators with the same precedence, it is like in Math again: the expression will be calculated from **left** to **right**.
 
-### 5.2. Comparison Operators
+### 1.5.2. Comparison Operators
 
 Table 2 - Comparison Operators with JavaScript
 
@@ -121,7 +121,7 @@ Table 2 - Comparison Operators with JavaScript
 
 As we can see, comparison operators return a boolean value (`true` or `false`). It is commonly used with "if" structures.
 
-### 5.3. Logical Operators
+### 1.5.3. Logical Operators
 
 Table 3 - Logical Operators with JavaScript
 
@@ -131,7 +131,7 @@ Table 3 - Logical Operators with JavaScript
 | &#124;&#124; |      OR      | One OR another condition  |
 |      !       |     NOT      |         NOT equal         |
 
-### 5.4. Assignment Operators
+### 1.5.4. Assignment Operators
 
 Table 4 - Assignment Operators
 
@@ -143,7 +143,7 @@ Table 4 - Assignment Operators
 |   \*=    | Multiplication assignment |
 |    /=    |    Division assignment    |
 |    %=    |    Reminder assignment    |
- 
-##### **Let's practice!**
- 
- - Practice 1 - Create a program that calculates the amount of fuel spent on a trip. In this program there should be 3 variables (fuel price, average amount of fuel spent by the car (km/L), and the distance of the trip (in km)). Print on the console the amount of fuel that will be spent to make the trip. [My solution](/en/js/practicing/02-p01.js)
+
+## 2. **Let's practice!**
+
+- Practice 1 - Create a program that calculates the amount of fuel spent on a trip. In this program there should be 3 variables (fuel price, average amount of fuel spent by the car (km/L), and the distance of the trip (in km)). Print on the console the amount of fuel that will be spent to make the trip. [My solution](/en/js/practicing/02-p01.js)

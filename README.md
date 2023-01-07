@@ -1,4 +1,4 @@
-# Welcome   
+# Welcome
 
 |    Language     |          Link          |
 |:---------------:|:----------------------:|
@@ -27,13 +27,13 @@ I hope it will be of great value to anyone who needs it! Enjoy it! o/
 ## Tables (JS Study)  
 
 |                                Table of contents                                 |
-|---------------------------------------------------------------------------------|
-|   [01 - JavaScript programming fundamentals](./en/js/text/01-fundamentals.md)   |
-|[02 - JS If statements and functions ](./en/js/text/02-ifStatmentAndFunctions.md)|
-|         [03 - JS loops and packing](./en/js/text/03-loopsAndPacking.md)         |
-|                   [04 - JS arrays](./en/js/text/04-arrays.md)                   |
-|                 [05 - JS objects](./en/js/text/05-jsObjects.md)                 |
-|              [06 - JS Map and Set](./en/js/text/06-jsMapAndSet.md)              |  
+|----------------------------------------------------------------------------------|
+|   [01 - JavaScript programming fundamentals](./en/js/text/01-fundamentals.md)    |
+|[02 - JS If statements and functions](./en/js/text/02-ifStatmentAndFunctions.md) |
+|         [03 - JS loops and packing](./en/js/text/03-loopsAndPacking.md)          |
+|                   [04 - JS arrays](./en/js/text/04-arrays.md)                    |
+|                 [05 - JS objects](./en/js/text/05-jsObjects.md)                  |
+|              [06 - JS Map and Set](./en/js/text/06-jsMapAndSet.md)               |  
 
 ## Tables (JS practice)  
 
@@ -90,7 +90,18 @@ I hope it will be of great value to anyone who needs it! Enjoy it! o/
 |             [Practice 48](./en/js/practicing/p48.js)            |  
 |             [Practice 49](./en/js/practicing/p49.js)            |  
 |             [Practice 50](./en/js/practicing/p50.js)            |  
-|             [Practice 51](./en/js/practicing/p51.js)            |  
+|             [Practice 51](./en/js/practicing/p51.js)            |
+|             [Practice 52](./en/js/practicing/p52.js)            |
+|             [Practice 53](./en/js/practicing/p53.js)            |
+|             [Practice 54](./en/js/practicing/p54.js)            |
+|             [Practice 55](./en/js/practicing/p55.js)            |
+|             [Practice 56](./en/js/practicing/p56.js)            |
+
+## Sources for JS study and practice
+
+- [JavaScript In Depth](https://www.youtube.com/playlist?list=PLovN13bqAx7D_MFjL0PHnCkYAHMSO8-kU): playlist from [Tech with Nader YouTube channel](https://www.youtube.com/@TechWithNader)
+
+- JavaScript: The Definitive Guide, 7th ed, David Flanagan.
 
 ## Tables (HTML/CSS practice)  
 
@@ -106,7 +117,8 @@ I hope it will be of great value to anyone who needs it! Enjoy it! o/
 |[01 - FreeCodeCamp CatApp](/en/html_css/practicing/freeCodeCamp/notes/01-catApp.md)|
 |[01 - FreeCodeCamp CafeMenu](/en/html_css/practicing/freeCodeCamp/notes/02-cafeMen)|  
 
-## PROJECTS  
+## PROJECTS
+
 Here is all projects that I'm doing while I'm studying.  
 
 |     PROJECT NAME    |          Short description          |       Link to the project's readme file        |

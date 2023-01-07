@@ -1,9 +1,9 @@
-# Objetos em JavaScript  
+# 5. Objetos em JavaScript  
 
-## 11. Objetos  
+## 5.1. Definição  
 Em JavaScript, um objeto é uma coleção de propriedades, e cada uma das propriedades consiste de um par nome e valor. Os objetos são usados ​​para representar no código de maneira mais realista entidades do mundo real, como pessoas, lugares, coisas e eventos.  
 
-### 11.1. A palavra-chave `this`  
+## 5.2. A palavra-chave `this`  
 A palavra-chave `this` é usada para se referir ao objeto atual que está sendo manipulado ou se refere ao contexto de execução atual. O valor de `this` pode mudar dependendo de como a função é chamada.  
 Há cinco características importantes acerca do uso do `this`.  
 
@@ -58,7 +58,7 @@ Há cinco características importantes acerca do uso do `this`.
       obj.greet(); // Output: "Hello, my name is undefined"
       ```  
 
-### 11.2. Anatomia de um objeto  
+## 5.3. Anatomia de um objeto  
 Um objeto em JavaScript é composto por propriedades e métodos. As propriedades são pares nome-valor que representam as características de um objeto. Os métodos são funções que representam ações que um objeto pode realizar.  
 
 ```javascript
@@ -77,12 +77,12 @@ const pessoa = {
 
 Acima, um objeto "pessoa" foi criado com as propriedades "nome", "idade" e "altura", e com métodos "andar" e "falar".  
 
-### 11.3. Criando objetos em JavaScript  
+## 5.4. Criando objetos em JavaScript  
 
-#### 11.3.1. Objetos literais  
+### 5.4.1. Objetos literais  
 Um objeto literal é uma notação de objeto que permite criar um objeto e definir suas propriedades e métodos diretamente na notação. É a maneira mais simples de criar objetos em JavaScript. O exemplo anterior (o que cria um objeto chamado "pessoa") é um exemplo de criação de objeto literal.  
 
-#### 11.3.2. Palavra reservada `new`  
+### 5.4.2. Palavra reservada `new`  
 A palavra reservada `new` pode ser usada para criar um objeto a partir de uma função construtora. Uma função construtora é uma função especial que é usada para inicializar um objeto quando ele é criado.  
 
 ```javascript
@@ -103,7 +103,7 @@ const pessoa = new Pessoa('João', 30, 1.75);
 
 Acima, foi criada uma função construtora para criar um objeto chamado `Pessoa`. São criadas três propriedades e dois métodos para o objeto. O operador `this` se refere ao objeto que está sendo criado pelo construtor. Finalmente, a função `Pessoa` é chamada para criar um novo objeto `Pessoa` com o auxílio do operador `new` em que as chaves "nome", "idade" e "altura" recebem os valores "João", 30 e 1.75, respectivamente.  
 
-#### 11.3.3. Protótipos  
+### 5.4.3. Protótipos  
 Em JavaScript, os objetos são criados a partir de protótipos. Um protótipo é um objeto modelo que serve como base para a criação de outros objetos. Quando criamos um objeto a partir de um protótipo, o novo objeto herda todas as propriedades e métodos do protótipo.
 
 Para criar um objeto a partir de um protótipo, podemos usar o método `Object.create()`.  
@@ -126,7 +126,7 @@ pessoa.altura = 1.75;
 
 No código acima, criei um objeto chamado `prototipoPessoa` e, a partir desse modelo, utilizei o método `Object.create()` para criar uma "nova pessoa".  
 
-#### 11.3.4. Método *create*  
+### 5.4.4. Método *create*  
 Este método também pode ser usado para criar um objeto a partir de um protótipo e definir as propriedades do objeto na criação.  
 
 ```javascript
@@ -146,7 +146,7 @@ const pessoa = Object.create(prototipoPessoa, {
 });
 ```  
 
-### 11.4. Consultando e configurando propriedades  
+## 5.5. Consultando e configurando propriedades  
 Para consultar o valor de uma propriedade de um objeto, basta acessá-la usando o operador de ponto (`.`) ou o operador de colchetes (`[]`).  
 
 ```javascript
@@ -163,7 +163,7 @@ pessoa.nome = 'Maria';
 pessoa['idade'] = 25;
 ```  
 
-#### 11.4.1. Arrays associativos  
+### 5.5.1. Arrays associativos  
 Em JavaScript, é possível usar strings como índices de propriedades de um objeto, o que permite criar arrays associativos, que são objetos que se comportam como arrays, mas podem ter propriedades com nomes personalizados.  
 
 ```javascript
@@ -179,7 +179,7 @@ for (let i = 0; i < pessoas.length; i++) {
 }
 ```  
 
-#### 11.4.2. Herança  
+### 5.5.2. Herança  
 Em JavaScript, os objetos podem herdar propriedades e métodos de outros objetos através do protótipo. Isso permite a criação de hierarquias de objetos e a reutilização de código.  
 Para criar uma hierarquia de objetos, basta definir o protótipo de um objeto como sendo outro objeto.  
 
@@ -213,7 +213,7 @@ cachorro.fazerBarulho(); // "Buddy fez barulho (snif snif)!"
 cachorro.latir(); // "Buddy latiu (au au)!"
 ```  
 
-#### 11.4.3. Erros de acesso à propriedade  
+### 5.5.3. Erros de acesso à propriedade  
 Se tentarmos acessar uma propriedade de um objeto que não existe, o JavaScript lançará um erro de acesso à propriedade. Para evitar, podemos verificar se a propriedade existe no objeto antes de acessá-la.  
 
 ```javascript
@@ -228,7 +228,7 @@ if (pessoa.hasOwnProperty('telefone')) {
 }
 ```  
 
-### 11.5. Excluindo propriedades de um objeto  
+## 5.6. Excluindo propriedades de um objeto  
 Para excluir uma propriedade de um objeto, podemos usar a palavra reservada `delete`. Isto exclui apenas as propriedades **próprias**, e não as **herdadas**.  
 
 ```javascript
@@ -237,7 +237,7 @@ delete pessoa.idade;
 
 O pedaço de código acima irá excluir a propriedade "idade" do objeto "pessoa".  
 
-### 11.6. Testando propriedades  
+## 5.7. Testando propriedades  
 Para testar se um objeto possui uma determinada propriedade, podemos usar o operador `in` ou o método `hasOwnProperty()`.  
 
 ```javascript
@@ -258,7 +258,7 @@ console.log(pessoa.hasOwnProperty('toString')); // false
 A diferença entre o operador `in` e o método `hasOwnProperty()` é que o primeiro verifica se a propriedade existe no objeto ou em algum de seus protótipos, enquanto o último verifica apenas se a propriedade existe no objeto em si.  
 No exemplo acima, no primeiro caso, a propriedade "nome" existe no objeto "pessoa", então tanto o `in` quanto o `hasOwnProperty()` retornam `true`. No segundo caso, a propriedade `toString` não existe no objeto "pessoa", mas existe em seu protótipo (todos os objetos em JavaScript herdam de `Object.prototype()`), então o `in` retorna `true`, mas o `hasOwnProperty()` retorna false.  
 
-### 11.7. Enumeração de propriedades  
+## 5.8. Enumeração de propriedades  
 Para enumerar as propriedades de um objeto, podemos usar o método `Object.keys()`.  
 
 ```javascript
@@ -271,7 +271,7 @@ Também é possível usar o método `Object.getOwnPropertyNames()` para enumerar
 console.log(Object.getOwnPropertyNames(pessoa)); // ['nome', 'altura']
 ```  
 
-### 11.8. Métodos *getter* e *setter*  
+## 5.9. Métodos *getter* e *setter*  
 Os métodos getter e setter são funções especiais que permitem interceptar o acesso e a atribuição de valores a propriedades de um objeto. Eles são definidos como propriedades do objeto usando a notação de get e set.  
 
 ```javascript
@@ -306,7 +306,7 @@ console.log(pessoa.nome); // 'Maria'
 
 No código acima, foi criado um objeto chamado "pessoa". Este objeto possui três propriedades e, para cada propriedade, temos um par `get`-`set`.  O método `get` é usado para recuperar o valor da propriedade, enquanto o método `set` define o valor da propriedade. As propriedades começam com *underscore* (`_`), o que significa que cada uma das propriedades é um **valor privado** do objeto. Portanto, `get nome()` recupera o valor da propriedade "_nome", enquanto `set nome()` define o valor da propriedade "_nome". Isso permite que o valor da propriedade seja lido e modificado de forma segura, sem que o valor seja acessado diretamente.  
 
-### 11.9. Atributos de propriedade  
+## 5.10. Atributos de propriedade  
 Os atributos de propriedade são configurações adicionais que podem ser definidas para as propriedades de um objeto. Eles incluem atributos como *enumerable*, *writable*, *configurable* e *value*.  
 Para definir os atributos de uma propriedade, podemos usar o método `Object.defineProperty()`.  
 
@@ -328,7 +328,7 @@ O método `Object.defineProperty()` pode ser utilizado para criar ou modificar u
 
 Esses atributos são chamados de **descritores de propriedades** e são usados para controlar o comportamento de uma propriedade em um objeto. Eles podem ser úteis em situações em que é necessário garantir que uma propriedade não seja alterada ou excluída por acidente ou por código malicioso. Por exemplo, se quisermos criar uma propriedade de somente leitura em um objeto, podemos usar o método `Object.defineProperty()` e definir o atributo **writable** como `false`. Isso garantirá que a propriedade não possa ser alterada.  
 
-### 11.10. Atributos de objeto  
+## 5.11. Atributos de objeto  
 Os atributos de objeto são configurações adicionais que podem ser definidas para um objeto inteiro. Eles incluem atributos como *extensible*, *sealed* e *frozen*.  
 Para definir os atributos de um objeto, nós podemos usar os métodos `Object.preventExtensions()`, `Object.seal()` e `Object.freeze()`.  
 
@@ -338,7 +338,7 @@ Object.seal(pessoa);
 Object.freeze(pessoa);
 ```  
 
-#### 11.10.1. Protótipos  
+### 5.11.1. Protótipos  
 O protótipo de um objeto é um outro objeto a partir do qual o objeto é criado. Quando um objeto é criado a partir de um protótipo, ele herda as propriedades do protótipo. Por exemplo:  
 
 ```javascript
@@ -354,7 +354,7 @@ const cachorro = Object.create(animal);
 console.log(cachorro.temPatas); // Output: true
 ```  
 
-#### 11.10.2. Atributo Classe  
+### 5.11.2. Atributo Classe  
 A partir do ECMAScript 2015 (também conhecido como ES6), foi adicionada a sintaxe de classes em JavaScript. As classes permitem que seja definido um conjunto de propriedades e métodos que compartilham um determinado comportamento. Por exemplo:  
 
 ```javascript
@@ -373,7 +373,7 @@ console.log(cachorro.temPatas); // Output: true
 
 Uma classe chamada `Animal` define um construtor que recebe como parâmetro `temPatas`. O operador `constructor` é usado para inicializar o objeto criado a partir da classe. Depois, cria-se um objeto chamado `cachorro` a partir da classe `Animal`, passando o valor `true` para o parâmetro `temPatas`. Isso cria um objeto `cachorro` com uma propriedade `temPatas`, e com o valor `true`. Por fim, o valor da propriedade `temPatas` do objeto cachorro é impresso, o que resulta em `true`.  
 
-#### 11.10.3. Atributo extensível  
+### 5.11.3. Atributo extensível  
 O atributo extensível determina se um objeto pode ter novas propriedades adicionadas a ele. Por padrão, todos os objetos são extensíveis, mas podemos alterar isso usando o método `Object.preventExtensions()`. Por exemplo:  
 
 ```javascript
@@ -389,7 +389,7 @@ Object.preventExtensions(obj);
 Object.isExtensible(obj); // Output: false
 ```  
 
-### 11.11. Serialização de objetos  
+## 5.12. Serialização de objetos  
 A serialização de objetos é o processo de converter um objeto em uma representação de string, que pode ser armazenada ou transmitida. Isso é útil quando precisamos armazenar ou transmitir dados em um formato que possa ser lido por outras linguagens ou sistemas.  
 O método `JSON.stringify()` é usado para serializar um objeto em JavaScript. Por exemplo:  
 
@@ -415,7 +415,7 @@ console.log(deserializedObj);
 // Output: { prop1: 'valor 1', prop2: 'valor 2' }
 ```  
 
-### 11.12. Métodos mais comuns usados com objetos em JavaScript  
+## 5.13. Métodos mais comuns usados com objetos em JavaScript  
 
 |Objeto|Funcionalidade|
 |:-----|:-------------|
@@ -430,7 +430,7 @@ console.log(deserializedObj);
 |`toJSON()`|retorna uma string JSON representando o objeto|
 |`valueOf()`|retorna o valor primitivo do objeto|  
 
-#### 11.12.1. Método `Object.keys()`  
+### 5.13.1. Método `Object.keys()`  
 É uma função do JavaScript que retorna um array com as chaves enumeráveis de um objeto. Isso significa que ela retorna as propriedades do objeto que têm a propriedade `enumerable` configurada como `true`.  
 Por exemplo, considere o seguinte objeto:  
 
@@ -459,7 +459,7 @@ Object.keys(obj).forEach(key => {
 
 Isso irá imprimir cada chave e seu respectivo valor para o objeto `"obj"`. É importante notar que o método `Object.keys()` não inclui propriedades herdadas no array de chaves retornado. Se  desejamos incluir propriedades herdadas, podemos usar o método `Object.getOwnPropertyNames()`.  
 
-#### 11.12.2. Método `Object.values()`  
+### 5.13.2. Método `Object.values()`  
 É uma função do JavaScript que retorna um array com os valores das propriedades enumeráveis de um objeto. Isso significa que ele retorna os valores das propriedades do objeto que têm a propriedade `enumerable` configurada como `true`.  
 
 ```javascript
@@ -488,7 +488,7 @@ Object.values(obj).forEach(value => {
 Isso irá imprimir cada valor das propriedades do objeto `"obj"`. É importante notar que o método `Object.values()` não inclui valores de propriedades herdadas no array de valores retornado. Se desejamos incluir valores de propriedades herdadas, pode usar o método `Object.getOwnPropertyNames()` em conjunto com o método `Object.getPrototypeOf()`.  
 O método `Object.values()` é suportado em todos os navegadores modernos, mas não é compatível com versões mais antigas do Internet Explorer.  
 
-#### 11.12.3. Método `Object.entries()`  
+### 5.13.3. Método `Object.entries()`  
 O método `Object.entries(obj)` é uma função do JavaScript que retorna um array de arrays, onde cada array interno representa uma propriedade enumerável do objeto como um par chave:valor. Isso significa que ele retorna os pares chave:valor das propriedades do objeto que têm a propriedade `enumerable` configurada como `true`.  
 
 ```javascript
@@ -519,7 +519,7 @@ Acima, cada chave e seu respectivo valor para o objeto `"obj"` serão impressos.
 É importante notar que o método `Object.entries()` não inclui pares chave:valor de propriedades herdadas no array de pares retornado. Se queremos incluir pares chave:valor de propriedades herdadas, podemos usar o método `Object.getOwnPropertyNames()` em conjunto com o método `Object.getPrototypeOf()`.  
 O método `Object.entries` é suportado em todos os navegadores modernos, mas não é compatível com versões mais antigas do Internet Explorer.  
 
-#### 11.12.4. Método `Object.assign()`  
+### 5.13.4. Método `Object.assign()`  
 Este é um método de objeto global em JavaScript que é usado para copiar os valores de todas as propriedades próprias enumeráveis de um ou mais objetos de origem para um objeto de destino. Ele retorna o objeto de destino. A sintaxe é a seguinte:  
 
 ```javascript
@@ -549,7 +549,7 @@ const obj3 = Object.assign({}, obj1, obj2);
 O método `Object.assign()` não copia propriedades que são definidas como `null` ou `undefined`. Além disso, ele não copia propriedades prototipadas. Se quisermos copiar todas as propriedades de um objeto, incluindo propriedades prototipadas, pode usar a função `Object.getOwnPropertyNames()` ou `Object.getOwnPropertySymbols()`.  
 O método `Object.assign()` é suportado em todos os navegadores modernos, exceto Internet Explorer.  
 
-#### 11.12.5. Método `Object.freeze()`  
+### 5.13.5. Método `Object.freeze()`  
 O método `Object.freeze()` é um método de objeto global em JavaScript que é usado para "congelar" um objeto. Quando um objeto é "congelado", ele se torna **imutável**, isto é, não pode ser modificado de nenhuma maneira. Isso inclui adicionar, remover ou alterar propriedades existentes. A sintaxe é a seguinte:  
 
 ```javascript
@@ -569,7 +569,7 @@ console.log(obj.a);  // Output: 1
 O método `Object.freeze()` também congela todos os objetos aninhados dentro do objeto principal. Isso significa que não é possível adicionar, remover ou alterar propriedades de qualquer objeto aninhado.  
 Este método é suportado em todos os navegadores modernos, exceto Internet Explorer.  
 
-#### 11.12.6. Método `Object.seal()`  
+### 5.13.6. Método `Object.seal()`  
 Este é um método de objeto global em JavaScript que é usado para "vedar" um objeto. Quando um objeto é "vedado", ele se torna **imutável**, ou seja, não pode ser adicionado, removido ou alterado qualquer uma de suas propriedades. No entanto, é possível alterar os valores das propriedades existentes. A sintaxe é a seguinte:  
 
 ```javascript
@@ -595,7 +595,7 @@ console.log(obj.b);  // Output: 2
 O método `Object.seal()` também "veda" todos os objetos aninhados dentro do objeto principal. Isso significa que não é possível adicionar, remover ou alterar propriedades de qualquer objeto aninhado, mas é possível alterar os valores das propriedades existentes.  
 Este método é suportado em todos os navegadores modernos, exceto Internet Explorer.  
 
-#### 11.12.7. Método `Object.create()`
+### 5.13.7. Método `Object.create()`
 Este é um método de objeto global em JavaScript que é usado para criar um novo objeto com o protótipo e propriedades especificados. A sintaxe é a seguinte:  
 
 ```javascript
@@ -615,7 +615,7 @@ console.log(obj2.a);  // Saída: 1
 No exemplo acima, `"obj2"` é criado tendo o `"obj1"` como seu protótipo, e a propriedade "b" é adicionada a `"obj2"` com o valor `"2"`. Como `"obj1"` é o protótipo do `"obj2"`, o `"obj2"` herda a propriedade "a" do `"obj1"`.  
 O método `Object.create()` é compatível com todos os navegadores modernos, exceto o Internet Explorer.  
 
-#### 11.12.8. Método `toString()`  
+### 5.13.8. Método `toString()`  
 O método `toString()` é chamado quando um objeto é usado em uma operação de concatenação de string ou quando o método `String()` é chamado com um objeto como argumento. Por padrão, esse método retorna uma string representando o objeto.  
 
 ```javascript
@@ -652,7 +652,7 @@ console.log(String(pessoa1)); // Nome: João, Idade: 30
 ```  
 Neste exemplo, foi criada uma classe `Pessoa` que tem um construtor que recebe um `nome` e uma `idade` como argumentos. Depois, sobrescrevemos o método `toString()` para retornar uma string no formato `Nome: {nome}, Idade: {idade}`. Quando chamamos o método `toString()` ou usamos a função `String()` em uma instância da classe `Pessoa`, a string personalizada é retornada.  
 
-#### 11.12.9. Método `toLocaleString()`  
+### 5.13.9. Método `toLocaleString()`  
 É semelhante ao `toString()`, mas este método tenta retornar uma string que esteja formatada de acordo com as convenções locais do usuário. Por exemplo, se o usuário estiver em um país onde se usa o ponto decimal como separador de decimais, a string retornada pelo `toLocaleString()` deverá conter ponto como separador de decimais.  
 
 ```javascript
@@ -671,7 +671,7 @@ console.log(product.toLocaleString()); // Output: 'Produto 1 - $29.99'
 Foi criado um objeto chamado `product` que representa um produto com um `nome`, um `preço` e uma `moeda` (atributos). O objeto `product` também possui um método chamado `toLocaleString()` para retornar uma string que representa o produto. Esta string será apresentada no formato apropriado para a localidade do usuário.  
 O método `toLocaleString()` usa o método homônimo presente na propriedade `price` para formatar o preço do produto de acordo com as configurações de localidade especificadas (`en-US` neste caso, o que significa Estados Unidos). O resultado final é uma string que inclui o nome do produto e o preço formatado com a moeda apropriada, como `$29.99`.  
 
-#### 11.12.10. Método `toJSON()`  
+### 5.13.10. Método `toJSON()`  
 Este método é chamado quando um objeto é passado como argumento para o método `JSON.stringify()`. Por padrão, esse método retorna a representação JSON do objeto.  
 
 ```javascript
@@ -690,7 +690,7 @@ console.log(JSON.stringify(obj)); // Output: '{"prop1":"valor 1"}'
 
 O código acima cria um objeto chamado `"obj"` com duas propriedades e converte uma delas para JSON com o método `toJSON()` chamado dentro do objeto. Ao utilizar o método `JSON.stringify()` e passar o objeto criado (`"obj"`) como argumento, ele acessa o método `toJSON()` do objeto, retornando a propriedade `"prop1"` escrita no formato JSON.  
 
-#### 11.12.11. Método `valueOf()`  
+### 5.13.11. Método `valueOf()`  
 O método `valueOf()` é herdado por todos os objetos em JavaScript e pode ser sobrescrito por objetos personalizados, se desejado. Este método é chamado automaticamente pelo JavaScript em vários contextos, incluindo quando um objeto é usado em operações matemáticas, em comparações, e em chamadas a funções como `String()` ou `Number()`.  
 O código a seguir mostra como o método `valueOf()` é chamado automaticamente quando um objeto é usado em uma expressão matemática:  
 
@@ -713,7 +713,7 @@ console.log(num); // 15
 
 É importante notar que o método `valueOf()` é diferente do método `toValue()`, que é usado para converter um objeto em um valor específico. Por exemplo, o método `toString()` converte um objeto em uma string e o método `toFixed()` converte um objeto do tipo `Number` em uma string com uma quantidade específica de casas decimais.  
 
-#### 11.12.12. Método `Object.getOwnPropertyNames()`  
+### 5.13.12. Método `Object.getOwnPropertyNames()`  
 Este é um método de objetos JavaScript que retorna uma matriz de strings que contém os nomes de todas as propriedades próprias enumeráveis e não-enumeráveis do objeto passado como argumento. Isso significa que ele retornará todas as propriedades do objeto que foram definidas diretamente no objeto, mas não as propriedades herdadas a partir de protótipos.  
 
 ```javascript
@@ -735,7 +735,7 @@ console.log(Object.keys(obj));
 
 O método `Object.getOwnPropertyNames()` é útil quando desejamos iterar sobre todas as propriedades de um objeto e realizar alguma ação específica com elas. Ele também pode ser útil para verificar se um objeto possui uma determinada propriedade, já que ele retorna todas as propriedades do objeto, independentemente de serem ou não enumeráveis.  
 
-#### 11.12.13. Método `Object.getPrototypeOf()`  
+### 5.13.13. Método `Object.getPrototypeOf()`  
 Este é um método de objeto em JavaScript que retorna o protótipo (também conhecido como *"prototype"*) de um objeto dado. O protótipo de um objeto é outro objeto que é usado como um modelo para criar o objeto atual. Quando um objeto é criado a partir de um protótipo, ele herda as propriedades e métodos do protótipo. Sei que já abordei isso antes, mas nunca é demais lembrar.  
 
 ```javascript
@@ -753,7 +753,7 @@ console.log(Object.getPrototypeOf(dog) === animalPrototype); // Output: true
 Acima, criei um objeto chamado `"animalPrototype"` que tem um método chamado `makeNoise()`. Em seguida, foi criado um objeto chamado `"dog"` usando o método `Object.create()`, passando `"animalPrototype"` como argumento. Isso faz com que `"dog"` **herde** as propriedades e métodos de `"animalPrototype"`. Podemos verificar isso chamando o método `Object.getPrototypeOf()` e passando `"dog"` como argumento. O método retornará o protótipo de `"dog"`, que é o objeto `"animalPrototype"`.  
 O método `Object.getPrototypeOf()` é útil quando queremos verificar qual é o protótipo de um objeto ou quando queremos acessar as propriedades e métodos herdados por um objeto. Ele também é útil para verificar se um objeto é uma instância de uma determinada classe ou tipo de objeto.  
 
-#### 11.12.14. Método `Object.getOwnPropertySymbols()`  
+### 5.13.14. Método `Object.getOwnPropertySymbols()`  
 Este é um método que retorna um array de símbolos que são propriedades de objeto `"own"` (próprias). Isso significa que o método retorna um array de símbolos que são propriedades enumeráveis do objeto em questão, mas que não inclui propriedades herdadas ou não-enumeráveis.  
 
 ```javascript
@@ -770,7 +770,7 @@ console.log(Object.getOwnPropertySymbols(obj)); // [Symbol(symbol1), Symbol(symb
 O código acima cria um objeto vazio (`"obj"`) e dois *symbols*, (`"symbol1"` e `"symbol2"`). Em seguida, atribui os valores "`value1`" e "`value2`" aos *symbols* respectivamente no objeto obj. Finalmente, o método `Object.getOwnPropertySymbols()` é usado para retornar todos os *symbols* que são propriedades próprias do objeto `"obj"`. Portanto, a saída será `[Symbol(symbol1), Symbol(symbol2)]`.  
 **Símbolos** são um tipo de valor primitivo em JavaScript que servem como identificadores únicos. Eles podem ser usados como propriedades de objeto para criar propriedades privadas que não podem ser acessadas diretamente por código externo. O método `Object.getOwnPropertySymbols()` é útil para acessar essas propriedades privadas em um objeto. É importante reforçar que o método só retornará símbolos que são propriedades de objeto `"own"` (próprias) do objeto em questão. Se quisermos obter todas as propriedades de um objeto, incluindo as herdadas, podemos usar o método `Object.getOwnPropertyNames()` ou o operador `for...in`.  
 
-##### 'Bora praticar!  
+#### 'Bora praticar!  
 
  - Prática 33 - Crie um objeto chamado "mexico" com as seguintes propriedades: id -> 24, name -> "Mexico", capital -> "Mexico City", neighbors -> ["USA", "Guatemala", "Belize"]. Em seguida, imprima o objeto no terminal. Em seguida, altere o "id" para 25 e adicione "Honduras" à lista de vizinhos de "mexico". Finalmente, imprima "mexico" no terminal novamente. [Solução](/pt-br/js/praticando/p33.js)
 

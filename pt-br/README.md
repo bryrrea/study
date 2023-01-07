@@ -83,14 +83,25 @@ Espero que seja de grande valia a quem precisar! Bons estudos e bom proveito! o/
 |                [Prática 41](./js/praticando/p41.js)               |
 |                [Prática 42](./js/praticando/p42.js)               |
 |                [Prática 43](./js/praticando/p43.js)               |
-|                [Prática 44](./js/praticando/p43.js)               |
-|                [Prática 45](./js/praticando/p43.js)               |
-|                [Prática 46](./js/praticando/p43.js)               |
-|                [Prática 47](./js/praticando/p43.js)               |
-|                [Prática 48](./js/praticando/p43.js)               |
-|                [Prática 49](./js/praticando/p43.js)               |
-|                [Prática 50](./js/praticando/p43.js)               |
-|                [Prática 51](./js/praticando/p43.js)               |  
+|                [Prática 44](./js/praticando/p44.js)               |
+|                [Prática 45](./js/praticando/p45.js)               |
+|                [Prática 46](./js/praticando/p46.js)               |
+|                [Prática 47](./js/praticando/p47.js)               |
+|                [Prática 48](./js/praticando/p48.js)               |
+|                [Prática 49](./js/praticando/p49.js)               |
+|                [Prática 50](./js/praticando/p50.js)               |
+|                [Prática 51](./js/praticando/p51.js)               |
+|                [Prática 52](./js/praticando/p52.js)               |
+|                [Prática 53](./js/praticando/p53.js)               |
+|                [Prática 54](./js/praticando/p54.js)               |
+|                [Prática 55](./js/praticando/p55.js)               |
+|                [Prática 56](./js/praticando/p56.js)               |
+
+## Fonte dos estudos e práticas em JavaScript
+
+- JavaScript In Depth: playlist from [Tech with Nader YouTube channel](https://www.youtube.com/playlist?list=PLovN13bqAx7D_MFjL0PHnCkYAHMSO8-kU)
+
+- JavaScript: The Definitive Guide, 7th ed, David Flanagan
 
 ## Tables (Práticas HTML/CSS)  
 
@@ -106,9 +117,9 @@ Espero que seja de grande valia a quem precisar! Bons estudos e bom proveito! o/
 |[01 - FreeCodeCamp CatApp](/pt-br/html_css/pratica/freeCodeCamp/notas/01-catApp.md) |
 |[01 - FreeCodeCamp CafeMenu](/pt-br/html_css/pratica/freeCodeCamp/notas/02-cafeMenu)|  
 
-## PROJETOS  
-Aqui estarão todos os projetos que realizei enquanto estudava.  
+## PROJETOS
 
+Aqui estarão todos os projetos que realizei enquanto estudava.
 
 |  NOME DO PROJETO    |           DESCRIÇÃO CURTA           |         LINK PARA O README DO PROJETO         |
 |:-------------------:|:-----------------------------------:|:---------------------------------------------:|

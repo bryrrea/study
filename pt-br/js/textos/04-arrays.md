@@ -1,6 +1,6 @@
-# *Arrays* em JavaScript  
+# 4. *Arrays* em JavaScript  
 
-## 10. *Arrays*  
+## 4.1. Definição  
 Um *array* é uma coleção de dados. Ele pode ser escrito com vários tipos de dados dentro de um mesmo *array*.  
 
 ```javascript
@@ -56,11 +56,11 @@ Os *arrays* têm muitos métodos que funcionam só com ele. Abaixo, listarei os 
 Podemos ler mais sobre outros métodos de *arrays* [aqui](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array).  
 
 
-#### **'Bora praticar!**
+### **'Bora praticar!**
 
  - Prática 12 - Escreva uma função chamada "*square*", que deve ter um número como parâmetro. Esta função deve retornar o quadrado de um número. Após, escreva outra função chamada "*SumOfSquares*", que deve conter dois números como parâmetro. Utilize a função "*square*" dentro da função "*sumOfSquares*", e deve retornar a soma do quadrado dos dois números. [Solução](/pt-br/js/praticando/13-p12.js)  
 
-### 10.1. *map()*  
+## 4.2. *map()*  
 O módulo `map()` é exclusivamente utilizado em *arrays*. Este módulo percorre um *array* e recebe como parâmetro uma função de *callback* que irá **modificar** ou **trabalhar** os dados existentes no *array*. O `map()` **retorna** um novo *array*, mantendo o original intacto.  
 
 > Devo prestar atenção no **retorna**, pois toda vez que o `map()` é chamado ele deve retornar alguma coisa!  
@@ -79,7 +79,7 @@ console.log(arrayTimesFive);
 
 Na primeira linha, escrevi uma função que recebe um número como parâmetro, e este número será multiplicado por 5. Após, criei um *array* com cinco números. Depois, criei uma constante para utilizar o método `map()` no *array* que criei anteriormente, passando a função como parâmetro a função que criei. A saída será um novo *array* em que todos os elementos do *array* original foram multiplicados por 5.  
 
-#### **'Bora praticar!**
+### **'Bora praticar!**
 
  - Prática 13 - Escreva uma função que some todos os elementos de um *array* de números. [Solução](/pt-br/js/praticando/p13.js)
 
@@ -101,7 +101,7 @@ Na primeira linha, escrevi uma função que recebe um número como parâmetro, e
 
  - Prática 22 - Crie um *array* chamado *"row"* com os valores `[10, 20, 30, 40, 50]`. Crie um novo *array* chamado *matrix* a partir do uso do `map` no *array "row"*, retornando cada item em um *array*, resultando em um *array* com duas dimensões. Imprima na tela os dois *arrays*. A resposta deve ser `[[10], [20], [30], [40], [50]]`. [Solução](/pt-br/js/praticando/p22.js)  
 
-### 10.2. *`filter()`*  
+## 4.3. *`filter()`*  
 Temos alguns métodos para pesquisar *arrays* em JavaScript.
 
 |Método|Como funciona|
@@ -132,7 +132,7 @@ console.log(filteringEvenNumbers); // [ 2, 4, 6]
 
 Neste exemplo, o método `filter()` é usado para procurar números pares no *array* `arrayWithNumbers`. O método `filter()` retorna um novo *array* contendo todos os números pares encontrados no *array* original, enquanto os outros métodos retornariam um único elemento ou o índice do elemento.  
 
-#### **'Bora praticar!**
+### **'Bora praticar!**
 
  - Prática 23 - Crie um *array* chamado "*practice*" com números (10-20). Usando o filter, crie um novo *array* que mantém os números pares em practice. Depois, imprima ambos os *arrays*. [Solução](/pt-br/js/praticando/p23.js)
 
@@ -144,7 +144,7 @@ Neste exemplo, o método `filter()` é usado para procurar números pares no *ar
 
  - Prática 27 - Crie um *array* chamado "*nums*" com os seguintes valores: [10, 20, 30, 40, 50]. Crie um *array* chamado "*timesTwo*" e, usando o `map()`, multiplique cada número por dois. Depois, crie um *array* chamado "*over50*" que filtre "*timesTwo*" para manter somente os valores acima de 50. Portanto, imprima os três *arrays*. [Solução](/pt-br/js/praticando/p27.js)  
 
-### 10.3. *reduce()*  
+## 4.4. *reduce()*  
 O método `reduce()` é um pouco mais complicado do que os dois métodos anteriores (`map()` e `filter()`), embora também seja usado para processar um *array*. Primeiro de tudo, este método aceita uma função como parâmetro. No entanto, esta função precisa ter dois parâmetros: um acumulador e uma variável para representar cada elemento do *array*. Outra coisa importante sobre o *reduce* é que ele precisa de mais um parâmetro: um inicializador para o acumulador. Vejamos como a sintaxe funciona:  
 
 ```javascript
@@ -176,7 +176,7 @@ Portanto, na primeira iteração, `previousNumber = 0` e `currentNumber = 5`; na
 
 Portanto, podemos afirmar que o método `reduce()` retorna para nós uma forma reduzida do *array* sem alterar quaisquer elementos do *array* original.  
 
-#### **'Bora praticar!**  
+### **'Bora praticar!**  
 
  - Prática 28 - Crie um *array* chamado "*points*" com os números de 55 a 60 (inclusos). Em seguida, crie uma variável chamada "*sum*" usando `reduce()` para somar os pontos em "points". Por último, imprima "points" e "sum". [Solução](/pt-br/js/praticando/p28.js)
 

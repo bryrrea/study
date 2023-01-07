@@ -1,10 +1,10 @@
-# Estruturas de repetição e empacotamento  
+# 3. Estruturas de repetição e empacotamento  
 
-## 8. Estruturas de repetição
+## 3.1. Estruturas de repetição
 
 As estruturas de repetição são estruturas que permitem a execução do mesmo bloco de código mais de uma vez.
 
-### 8.1. *Loop for*
+### 3.1.1. *Loop for*
 
 O *loop for* é usado em *loops* contáveis. Esta estrutura é comumente chamada de "estrutura de repetição com variável de controle". Abaixo, segue a sintaxe para escrever um *loop for*.
 
@@ -21,7 +21,7 @@ Vamos examinar o código acima:
  - **"`index++`"** está incrementando a variável `"index"` em uma unidade. Ela pode ser incrementada mais do que uma unidade também.
 
 
-### 8.2. *Loop while*
+### 3.1.2. *Loop while*
 
 O ***while loop*** é usado quando temos incontáveis loops. É comumente chamado de **"estrutura de repetição com um teste lógico"**, uma vez que precisamos iniciar uma variável fora do loop e incrementá-la (ou diminui-la) para funcionar. Vamos ver a sintaxe abaixo:
 
@@ -50,7 +50,7 @@ while (points > 100 === false) {
 
 No código acima, iniciei uma variável chamada "*points*" e o laço de repetição será executado enquanto esta variável **não for** maior que 100. Um "*if statement*" foi adicionado para parar o loop quando a variável chegar a zero. A utilização da palavra reservada *`break`* é restrita a loops "while" e "for".  
 
-## 9. Empacotamento
+## 3.2. Empacotamento
 
 Quando estamos criando um aplicativo, criamos algumas características neste. Portanto, é quase sempre uma boa prática criar **módulos** separados do script principal. Isso melhora a organização e a capacidade de manutenção de nosso código.  
 Para usar aqueles módulos que foram escritos fora do script principal, precisamos **importá-los** no script principal. Mas, para importá-los no script principal, precisamos exportar aquele módulo para ser importado para onde quisermos. Vamos ver um exemplo abaixo:
@@ -104,7 +104,7 @@ console.log(randomList.creatingRandomNumbers(1, 100));
 
 Eu criei uma variável para importar os módulos do script "checkingNumbers.js". Utilizei a palavra reservada **"`require`"** e dei uma string com a localização do script como argumento. Depois, utilizei o módulo "creatingRandomNumbers" para criar e imprimir na tela uma lista com 10 números.
 
-### 9.1. Desestruturação
+### 3.2.1. Desestruturação
 
 Desestruturação é uma expressão JavaScript que torna possível desempacotar valores e propriedades de *arrays* e objetos em variáveis distintas em uma única linha de código.
 
@@ -159,7 +159,7 @@ E podemos alterar o nome de uma variável se quisermos:
 const { strawberry: berry } = fruits;
 ```  
 
-##### **'Bora praticar!**  
+#### **'Bora praticar!**  
 
  - Prática 10: Crie um programa que calcule a tabuada de um número. [Minha solução](/pt-br/js/praticando/11-p10.js)
   

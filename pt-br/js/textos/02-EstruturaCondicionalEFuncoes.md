@@ -1,6 +1,6 @@
-# Estruturas condicionais e Funções  
+# 2. Estruturas condicionais e Funções  
 
-## 6. Estruturas condicionais  
+## 2.1. Estruturas condicionais  
 As estruturas condicionais verificam se uma condição é verdadeira ou falsa antes de executar um bloco de código. Abaixo, podemos ver uma declaração básica do tipo "se".  
 
 ```javascript
@@ -40,7 +40,7 @@ Temos duas convenções principais sobre estruturas condicionais:
  1. Quando temos uma verificação complexa a ser feita, é altamente recomendável a criação de uma variável para estocar essa verificação.
  2. A variável criada deve começar com *"is"*, já que estamos verificando uma condição booliana. É como se estivéssemos perguntando algo ao nosso código, por exemplo *"isEven"* (este número é um número par?).  
 
-##### **'Bora praticar!**
+### **'Bora praticar!**
 
  - Prática 2 - Faça um programa que calcule o valor gasto de combustível em uma viagem. Neste programa deve haver 5 variáveis (preço do etanol, preço da gasolina, tipo de combustível do carro, valor médio de combustível gasto pelo carro (km/L) e a distância da viagem (em km)). Imprima no console o valor que será gasto em combustível para realizar a viagem. [Minha solução](/pt-br/js/praticando/03-p02.js)  
 
@@ -50,7 +50,7 @@ Temos duas convenções principais sobre estruturas condicionais:
 
  - Prática 5 - Elabore um algoritmo que calcule o que deve ser pago por um produto, considerando o preço normal de etiqueta e a opção de pagamento escolhida. Utilize as seguintes condições: 10% de desconto quando pago à vista no Débito; 15% de desconto quando pago à vista em dinheiro ou PIX; se pago em duas vezes no cartão de crédito, o consumidor pagará o preço de etiqueta; se fizer em mais de duas vezes no cartão de crédito, será cobrado o preço da etiqueta acrescido de 10%. [Minha solução](/pt-br/js/praticando/06-p05.js)  
 
-## 7. Funções  
+## 2.2. Funções  
 Uma função é um pedaço de código que pode ser "chamada" a qualquer momento que quisermos. É útil quando temos um pedaço de código que será escrito muitas vezes em nosso programa, por exemplo  
 A seguinte sintaxe é usada para escrever uma função em JavaScript:  
 
@@ -106,7 +106,7 @@ As funções têm duas propriedades interessantes no JavaScript: elas podem ser 
 
 Uma palavra reservada que é comumente utilizada dentro de funções (mas não só dentro delas) é o ***`this`***. No caso das funções, essa palavra reservada serve como um contexto para a execução da função, isto é, ela pode substituir uma variável ou característica. No item seguinte (objetos) irei dar um exemplo mais concreto.  
 
-##### **'Bora praticar!**
+### **'Bora praticar!**
 
 >Prática 6 - Crie uma função para checar se você é maior de idade. [Minha solução](/pt-br/js/praticando/07-p06.js)  
 
