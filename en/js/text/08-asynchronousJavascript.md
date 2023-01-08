@@ -85,7 +85,7 @@ myPromise
     .finally(() => console.log("Finally!"))
 ```
 
-## 8.4. **Let's practice!**  
+### 8.3.4. **Let's practice!**  
 
 - Practice 52: Print out "Program Started" at the start of your code. Then, create a Promise that resolves after 3 seconds. Show the Promise while it's pending. Next, print out "Program in progress..." and, finally, print out "Program completed" when the Promise completes after 3 seconds. [Solution](/en/js/practicing/p52.js)
 

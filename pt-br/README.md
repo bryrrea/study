@@ -96,6 +96,10 @@ Espero que seja de grande valia a quem precisar! Bons estudos e bom proveito! o/
 |                [Prática 54](./js/praticando/p54.js)               |
 |                [Prática 55](./js/praticando/p55.js)               |
 |                [Prática 56](./js/praticando/p56.js)               |
+|                [Prática 57](./js/praticando/p57.js)               |
+|                [Prática 58](./js/praticando/p58.js)               |
+|                [Prática 59](./js/praticando/p59.js)               |
+|                [Prática 60](./js/praticando/p60.js)               |
 
 ## Fonte dos estudos e práticas em JavaScript
 

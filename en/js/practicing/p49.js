@@ -12,7 +12,7 @@ const results = [];
 
 let dragonNumber = 1;
 
-for (age of ages) {
+for (let age of ages) {
     results.push({ age: age, name: `Dragon ${dragonNumber}` });
 
     dragonNumber++;
