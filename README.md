@@ -100,6 +100,10 @@ I hope it will be of great value to anyone who needs it! Enjoy it! o/
 |             [Practice 58](./en/js/practicing/p58.js)            |
 |             [Practice 59](./en/js/practicing/p59.js)            |
 |             [Practice 60](./en/js/practicing/p60.js)            |
+|             [Practice 61](./en/js/practicing/p61.js)            |
+|             [Practice 62](./en/js/practicing/p62.js)            |
+|             [Practice 63](./en/js/practicing/p63.js)            |
+|             [Practice 64](./en/js/practicing/p64.js)            |
 
 ## Sources for JS study and practice
 
