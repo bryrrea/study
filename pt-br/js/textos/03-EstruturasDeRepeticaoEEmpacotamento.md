@@ -16,10 +16,9 @@ for (let index = 0; index < array.length; index++) {
 
 Vamos examinar o código acima:
 
- - **"`let index = 0`"** está criando uma variável chamada `"index"` e começa com o valor (índice) zero (quase todas as linguagens de programação começam o índice por zero).
- - **"`index < array.length`"** é uma estrutura booliana que verifica se a condição é verdadeira ou false (`true` ou `false`).
- - **"`index++`"** está incrementando a variável `"index"` em uma unidade. Ela pode ser incrementada mais do que uma unidade também.
-
+- **"`let index = 0`"** está criando uma variável chamada `"index"` e começa com o valor (índice) zero (quase todas as linguagens de programação começam o índice por zero).
+- **"`index < array.length`"** é uma estrutura booliana que verifica se a condição é verdadeira ou false (`true` ou `false`).
+- **"`index++`"** está incrementando a variável `"index"` em uma unidade. Ela pode ser incrementada mais do que uma unidade também.
 
 ### 3.1.2. *Loop while*
 
@@ -94,7 +93,7 @@ module.exports = {
 }; */
 ```
 
-Agora, se você quiser utilizar o módulo "creatingRandomNumbers" em outro script/programa, você utiliza a palavra reservada **_"`require`"_** no arquivo no qual você quer usar o módulo.
+Agora, se você quiser utilizar o módulo "creatingRandomNumbers" em outro script/programa, você utiliza a palavra reservada **"`require`"** no arquivo no qual você quer usar o módulo.
 
 ```javascript
 const randomList = require("./checkingNumbers");
@@ -104,63 +103,8 @@ console.log(randomList.creatingRandomNumbers(1, 100));
 
 Eu criei uma variável para importar os módulos do script "checkingNumbers.js". Utilizei a palavra reservada **"`require`"** e dei uma string com a localização do script como argumento. Depois, utilizei o módulo "creatingRandomNumbers" para criar e imprimir na tela uma lista com 10 números.
 
-### 3.2.1. Desestruturação
+## 3.3. **'Bora praticar!**
 
-Desestruturação é uma expressão JavaScript que torna possível desempacotar valores e propriedades de *arrays* e objetos em variáveis distintas em uma única linha de código.
-
-```javascript
-const food = ["🍕", "🍔", "🍗", "🥗", "🍵"];
-
-const pizza = food[0];
-const hamburger = food[1];
-const chicken = food[2];
-const salad = food[3];
-const soup = food[4];
-```
-
-Acima, essa era a forma como acessávamos informações dentro de uma *array* no passado. Desde ES6, podemos fazer como abaixo:
-
-```javascript
-const food = ["🍕", "🍔", "🍗", "🥗", "🍵"];
-
-const [pizza, hamburger, chicken, salad, soup] = food;
-```
-
-Como podemos ver, cada variável dentro da *array* no lado esquerdo do sinal de igual se refere ao índice dos elementos da *array*. Podemos ignorar um elemento da *array* usando apenas uma vírgula (por exemplo, `const[pizza, , , salad, soup] = food` armazena "🍕", "🥗" and "🍵" nas variáveis). Nós também podemos utilizar `...rest` para agrupar os outros elementos em um único elemento, como em `const[pizza, hamburger, ...rest] = food`, que retorna `pizza = "🍕"`, `hamburger = "🍔"`, e `"🍗", "🥗", "🍵"` como **"`rest`"**.  
-Nós podemos alterar um valor dentro de uma lista da mesma forma:
-
-```javascript
-const food = ["🍕", "🍔", "🍗", "🥗", "🍵"];
-
-const [pizza, hamburger, chicken, salad, soup = "🥕"] = food;
-```
-
-Anteriormente, falamos sobre objetos locais:
-
-```javascript
-const fruits {
-  strawberry: "🍓",
-  banana: "🍌",
-  watermelon: "🍉",
-  apple: "🍎",
-  peach: "🍑"
-};
-```
-
-E podemos escrevê-los como a seguir:
-
-```javascript
-const { strawberry, banana, watermelon, apple, peach } = fruits;
-```
-
-E podemos alterar o nome de uma variável se quisermos:
-
-```javascript
-const { strawberry: berry } = fruits;
-```  
-
-#### **'Bora praticar!**  
-
- - Prática 10: Crie um programa que calcule a tabuada de um número. [Minha solução](/pt-br/js/praticando/11-p10.js)
+- Prática 10: Crie um programa que calcule a tabuada de um número. [Minha solução](/pt-br/js/praticando/11-p10.js)
   
- - Prática 11: Crie um programa que percorra uma lista de números para retornar apenas os números pares desta lista. [Minha solução](/pt-br/js/praticando/12-p11.js)*
+- Prática 11: Crie um programa que percorra uma lista de números para retornar apenas os números pares desta lista. [Minha solução](/pt-br/js/praticando/12-p11.js)

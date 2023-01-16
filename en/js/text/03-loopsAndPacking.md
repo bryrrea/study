@@ -105,62 +105,7 @@ console.log(randomList.creatingRandomNumbers(1, 100));
 
 I created a variable to import the modules from the script "checkingNumbers.js". I used the reserved word **"`require`"** and gave a string with the location of the script as argument. Then, I used the module "creatingRandomNumbers" to create and print on the screen a list with 10 numbers.
 
-### 3.2.1. Destructuring
-
-Destructuring is a JavaScript expression that makes it possible to unpack values and properties from arrays and objects into distinct variables in a single line of code.
-
-```javascript
-const food = ["🍕", "🍔", "🍗", "🥗", "🍵"];
-
-const pizza = food[0];
-const hamburger = food[1];
-const chicken = food[2];
-const salad = food[3];
-const soup = food[4];
-```
-
-Above, this was the way we accessed information within an array in the past. Since ES6, we can do as below:
-
-```javascript
-const food = ["🍕", "🍔", "🍗", "🥗", "🍵"];
-
-const [pizza, hamburger, chicken, salad, soup] = food;
-```
-
-As we can see, each variable inside the array on the left side of the equals sign refers to the index of the array elements. We can ignore an array element by using just a comma (e.g. `const[pizza, , , salad, soup] = food` stocks "🍕", "🥗" and "🍵" into variables). We also can use `...rest` to group the other elements in one element called **"rest"**, like `const[pizza, hamburger, ...rest] = food` returns `pizza = "🍕"`, `hamburger = "🍔"`, and `"🍗", "🥗", "🍵"` as **"`rest`"**.
-We can change a value inside a list in te same way:
-
-```javascript
-const food = ["🍕", "🍔", "🍗", "🥗", "🍵"];
-
-const [pizza, hamburger, chicken, salad, soup = "🥕"] = food;
-```
-
-Earlier, we talked about local objects, as following:
-
-```javascript
-const fruits {
-  strawberry: "🍓",
-  banana: "🍌",
-  watermelon: "🍉",
-  apple: "🍎",
-  peach: "🍑"
-};
-```
-
-And we can write like this:
-
-```javascript
-const { strawberry, banana, watermelon, apple, peach } = fruits;
-```
-
-And we can chance a variable name if we want to:
-
-```javascript
-const { strawberry: berry } = fruits;
-```
-
-### 3.2.2. **Let's practice!**
+## 3.3. **Let's practice!**
 
 - Practice 10: Create a program to calculate the multiplication table of a number. [My solution](/en/js/practicing/11-p10.js)
 

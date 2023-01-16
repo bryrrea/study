@@ -108,10 +108,18 @@ Espero que seja de grande valia a quem precisar! Bons estudos e bom proveito! o/
 |                [Prática 66](./js/praticando/p66.js)               |
 |                [Prática 67](./js/praticando/p67.js)               |
 |                [Prática 68](./js/praticando/p68.js)               |
+|                [Prática 69](./js/praticando/p69.js)               |
+|                [Prática 70](./js/praticando/p70.js)               |
+|                [Prática 71](./js/praticando/p71.js)               |
+|                [Prática 72](./js/praticando/p72.js)               |
+|                [Prática 73](./js/praticando/p73.js)               |
+|                [Prática 74](./js/praticando/p74.js)               |
+|                [Prática 75](./js/praticando/p75.js)               |
+|                [Prática 76](./js/praticando/p76.js)               |
 
 ## Fonte dos estudos e práticas em JavaScript
 
-- JavaScript In Depth: playlist from [Tech with Nader YouTube channel](https://www.youtube.com/playlist?list=PLovN13bqAx7D_MFjL0PHnCkYAHMSO8-kU)
+- JavaScript In Depth: playlist do canal [Tech with Nader](https://www.youtube.com/playlist?list=PLovN13bqAx7D_MFjL0PHnCkYAHMSO8-kU) no YouTube
 
 - JavaScript: The Definitive Guide, 7th ed, David Flanagan
 
