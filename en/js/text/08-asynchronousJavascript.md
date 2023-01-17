@@ -1,5 +1,7 @@
 Para ler em pt-BR, [clique aqui](/pt-br/js/textos/08-javascriptAssincrono)
 
+# 8. Asynchronous JavaScript
+
 ## 8.1. Definition
 
 JavaScript is a programming language mainly used for web development, i.e, it runs in web browsers and its proposal is to be **event-oriented**. This means that the user needs to perform an action (click or touch) for JavaScript programs to do something. On the other hand, most of the programs in the real world are **asynchronous**, i.e., they stop their functionality while waiting for data or the occurrence of some event. This stop in functionality can be, many times, undesirable.

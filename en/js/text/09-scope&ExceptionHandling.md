@@ -1,3 +1,5 @@
+Para ler em pt-BR, [clique aqui](/pt-br/js/textos/09-escopo%26Excecoes.md)
+
 # 9. Scope and Exception Handling
 
 ## 9.1. Scope

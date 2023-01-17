@@ -116,6 +116,10 @@ I hope it will be of great value to anyone who needs it! Enjoy it! o/
 |             [Practice 74](./en/js/practicing/p74.js)            |
 |             [Practice 75](./en/js/practicing/p75.js)            |
 |             [Practice 76](./en/js/practicing/p76.js)            |
+|             [Practice 77](./en/js/practicing/p77.js)            |
+|             [Practice 78](./en/js/practicing/p78.js)            |
+|             [Practice 79](./en/js/practicing/p79.js)            |
+|             [Practice 80](./en/js/practicing/p80.js)            |
 
 ## Sources for JS study and practice
 

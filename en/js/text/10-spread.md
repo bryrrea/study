@@ -1,3 +1,5 @@
+Para ler em pt-BR, [clique aqui](/pt-br/js/textos/10-spread.md)
+
 # 10. The Spread Operator (`...`)
 
 ## 10.1. Definition

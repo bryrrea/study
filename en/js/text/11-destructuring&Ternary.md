@@ -1,3 +1,5 @@
+Para ler em pt-BR, [clique aqui](/pt-br/js/textos/11-desestruturacaoETernario.md)
+
 # 11. Destructuring and Ternary Operator
 
 ## 11.1. Destructuring
@@ -141,7 +143,7 @@ moodSad === false
 
 As you can see above, the code got really confuse using the ternary operator instead of a convectional if/else statement.
 
-### 11.2.3. **Let's practice!**
+### 11.2.4. **Let's practice!**
 
 - Practice 73:
       1. Create a variable called "hungry" that start as true;
