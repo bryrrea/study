@@ -128,6 +128,10 @@ I hope it will be of great value to anyone who needs it! Enjoy it! o/
 | [Practice 86](./en/js/practicing/p86.js)                      |
 | [Practice 87](./en/js/practicing/p87.js)                      |
 | [Practice 88](./en/js/practicing/p88.js)                      |
+| [Practice 89](./en/js/practicing/p89.js)                      |
+| [Practice 90](./en/js/practicing/p90.js)                      |
+| [Practice 91](./en/js/practicing/p91.js)                      |
+| [Practice 92](./en/js/practicing/p92.js)                      |
 
 ## Sources for JS study and practice
 

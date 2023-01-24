@@ -127,7 +127,11 @@ Espero que seja de grande valia a quem precisar! Bons estudos e bom proveito! o/
 | [Prática 85](./js/praticando/p85.js)                                |
 | [Prática 86](./js/praticando/p86.js)                                |
 | [Prática 87](./js/praticando/p87.js)                                |
-| [Prática 88](./js/praticando/p88.js)                                |
+| [Prática 88](./js/praticando/88.js)                                 |
+| [Prática 89](./js/praticando/89.js)                                 |
+| [Prática 90](./js/praticando/90.js)                                 |
+| [Prática 91](./js/praticando/91.js)                                 |
+| [Prática92](./js/praticando/p92.js)                                 |
 
 ## Fonte dos estudos e práticas em JavaScript
 
