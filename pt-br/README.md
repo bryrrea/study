@@ -42,6 +42,7 @@ Espero que seja de grande valia a quem precisar! Bons estudos e bom proveito! o/
 | [12 - Declaração Switch](./js/textos/12-switch.md)                                          |
 | [13 - Geradores](./js/textos/13-generator.md)                                               |
 | [14 - Símbolos](./js/textos/14-symbols.md)                                                  |
+| [15 - Expressões Regulares (RegEx)](./js/textos/15-regex.md)                                |
 
 ## Sumário (Práticas JS)
 
@@ -139,7 +140,11 @@ Espero que seja de grande valia a quem precisar! Bons estudos e bom proveito! o/
 | [Prática 89](./js/praticando/89.js)                                 |
 | [Prática 90](./js/praticando/90.js)                                 |
 | [Prática 91](./js/praticando/91.js)                                 |
-| [Prática92](./js/praticando/p92.js)                                 |
+| [Prática 92](./js/praticando/p92.js)                                |
+| [Prática 93](./js/praticando/p93.js)                                |
+| [Prática 94](./js/praticando/p94.js)                                |
+| [Prática 95](./js/praticando/p95.js)                                |
+| [Prática 96](./js/praticando/p96.js)                                |
 
 ## Fonte dos estudos e práticas em JavaScript
 

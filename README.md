@@ -42,6 +42,7 @@ I hope it will be of great value to anyone who needs it! Enjoy it! o/
 | [12 - Switch statement](./en/js/text/12-switch.md)                                     |
 | [13 - Generators](./en/js/text/13-generator.md)                                        |
 | [14 - Symbols](./en/js/text/14-symbols.md)                                             |
+| [15 - Regular Expressions (RegEx)](./en/js/text/15-regex.md)                           |
 
 ## Tables (JS practice)
 
@@ -140,6 +141,10 @@ I hope it will be of great value to anyone who needs it! Enjoy it! o/
 | [Practice 90](./en/js/practicing/p90.js)                      |
 | [Practice 91](./en/js/practicing/p91.js)                      |
 | [Practice 92](./en/js/practicing/p92.js)                      |
+| [Practice 93](./en/js/practicing/p93.js)                      |
+| [Practice 94](./en/js/practicing/p94.js)                      |
+| [Practice 95](./en/js/practicing/p95.js)                      |
+| [Practice 96](./en/js/practicing/p96.js)                      |
 
 ## Sources for JS study and practice
 
