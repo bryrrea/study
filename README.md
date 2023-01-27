@@ -26,14 +26,22 @@ I hope it will be of great value to anyone who needs it! Enjoy it! o/
 
 ## Tables (JS Study)
 
-| Table of contents                                                                |
-| -------------------------------------------------------------------------------- |
-| [01 - JavaScript programming fundamentals](./en/js/text/01-fundamentals.md)      |
-| [02 - JS If statements and functions](./en/js/text/02-ifStatmentAndFunctions.md) |
-| [03 - JS loops and packing](./en/js/text/03-loopsAndPacking.md)                  |
-| [04 - JS arrays](./en/js/text/04-arrays.md)                                      |
-| [05 - JS objects](./en/js/text/05-jsObjects.md)                                  |
-| [06 - JS Map and Set](./en/js/text/06-jsMapAndSet.md)                            |
+| Table of contents                                                                      |
+| -------------------------------------------------------------------------------------- |
+| [01 - JavaScript programming fundamentals](./en/js/text/01-fundamentals.md)            |
+| [02 - JS If statements and functions](./en/js/text/02-ifStatmentAndFunctions.md)       |
+| [03 - JS loops and packing](./en/js/text/03-loopsAndPacking.md)                        |
+| [04 - JS arrays](./en/js/text/04-arrays.md)                                            |
+| [05 - JS objects](./en/js/text/05-jsObjects.md)                                        |
+| [06 - Map and Set constructors](./en/js/text/06-jsMapAndSet.md)                        |
+| [07 - For...of loops](./en/js/text/07-forOf.md)                                        |
+| [08 - Asynchronous JavaScript](./en/js/text/08-asynchronousJavascript.md)              |
+| [09 - Scope and Exception Handling](./en/js/text/09-scope%26ExceptionHandling.md)      |
+| [10 - Spread operator](./en/js/text/10-spread.md)                                      |
+| [11 - Destructuring and Ternary operators](./en/js/text/11-destructuring%26Ternary.md) |
+| [12 - Switch statement](./en/js/text/12-switch.md)                                     |
+| [13 - Generators](./en/js/text/13-generator.md)                                        |
+| [14 - Symbols](./en/js/text/14-symbols.md)                                             |
 
 ## Tables (JS practice)
 

@@ -24,7 +24,7 @@ Espero que seja de grande valia a quem precisar! Bons estudos e bom proveito! o/
 | [Pensamento computacional](./fundamentos/01-pensamentoComputacional.md) |
 | [Lógica de Programação](./fundamentos/02-logicaProgramacao.md)          |
 
-## Sumário (Estudo JS)
+## Sumário (Estudo núcleo JS)
 
 | Sumário                                                                                     |
 | ------------------------------------------------------------------------------------------- |
@@ -33,7 +33,15 @@ Espero que seja de grande valia a quem precisar! Bons estudos e bom proveito! o/
 | [03 - Objetos JS e _arrays_](./js/textos/03-EstruturasDeRepeticaoEEmpacotamento.md)         |
 | [04 - Estruturas de repetição e empacotamento JS](./js/textos/04-arrays.md)                 |
 | [05 - Objetos JS](./js/textos/05-objetosJs.md)                                              |
-| [06 - Map e Set](./js/textos/06-MapESetJS.md)                                               |
+| [06 - Construtores Map e Set](./js/textos/06-MapESetJS.md)                                  |
+| [07 - Laços for...of](./js/textos/07-forOf.md)                                              |
+| [08 - JavaScript Assíncrono](./js/textos/08-javascriptAssincrono.md)                        |
+| [09 - Escopo e tratamento de exceção](./js/textos/09-escopo%26Excecoes.md)                  |
+| [10 - Operador spread](./js/textos/10-spread.md)                                            |
+| [11 - Desestruturação e operadores ternário](./js/textos/11-desestruturacaoETernario.md)    |
+| [12 - Declaração Switch](./js/textos/12-switch.md)                                          |
+| [13 - Geradores](./js/textos/13-generator.md)                                               |
+| [14 - Símbolos](./js/textos/14-symbols.md)                                                  |
 
 ## Sumário (Práticas JS)
 
