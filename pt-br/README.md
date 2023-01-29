@@ -145,6 +145,10 @@ Espero que seja de grande valia a quem precisar! Bons estudos e bom proveito! o/
 | [Prática 94](./js/praticando/p94.js)                                |
 | [Prática 95](./js/praticando/p95.js)                                |
 | [Prática 96](./js/praticando/p96.js)                                |
+| [Prática 97](<./js/praticando/p97AoP100(modulos)/p97/>)             |
+| [Prática 98](<./js/praticando/p97AoP100(modulos)/p98/>)             |
+| [Prática 99](<./js/praticando/p97AoP100(modulos)/p99/>)             |
+| [Prática 100](<./js/praticando/p97AoP100(modulos)/p100/>)           |
 
 ## Fonte dos estudos e práticas em JavaScript
 

@@ -145,6 +145,10 @@ I hope it will be of great value to anyone who needs it! Enjoy it! o/
 | [Practice 94](./en/js/practicing/p94.js)                      |
 | [Practice 95](./en/js/practicing/p95.js)                      |
 | [Practice 96](./en/js/practicing/p96.js)                      |
+| [Practice 97](<./en/js/practicing/p97-p100(modules)/p97/>)    |
+| [Practice 98](<./en/js/practicing/p97-p100(modules)/p98/>)    |
+| [Practice 99](<./en/js/practicing/p97-p100(modules)/p99/>)    |
+| [Practice 100](<./en/js/practicing/p97-p100(modules)/p100/>)  |
 
 ## Sources for JS study and practice
 
