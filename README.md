@@ -43,6 +43,8 @@ I hope it will be of great value to anyone who needs it! Enjoy it! o/
 | [13 - Generators](./en/js/text/13-generator.md)                                        |
 | [14 - Symbols](./en/js/text/14-symbols.md)                                             |
 | [15 - Regular Expressions (RegEx)](./en/js/text/15-regex.md)                           |
+| [16 - Modules](./en/js/text/16-modulos.md)                                             |
+| [17 - NPM](./en/js/text/17-npm.md)                                                     |
 
 ## Tables (JS practice)
 

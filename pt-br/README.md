@@ -43,6 +43,8 @@ Espero que seja de grande valia a quem precisar! Bons estudos e bom proveito! o/
 | [13 - Geradores](./js/textos/13-generator.md)                                               |
 | [14 - Símbolos](./js/textos/14-symbols.md)                                                  |
 | [15 - Expressões Regulares (RegEx)](./js/textos/15-regex.md)                                |
+| [16 - Módulos](./js/textos/16-modulos.md)                                                   |
+| [17 - NPM](./js/textos/17-npm.md)                                                           |
 
 ## Sumário (Práticas JS)
 
