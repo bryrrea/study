@@ -1,4 +1,4 @@
-# 1. Fundamentos  
+# 1. Fundamentos
 
 ## 1.1. O básico sobre programação
 
@@ -137,8 +137,10 @@ Tabela 4 - Operadores de Atribuição
 |    -=    |    Atribuição de subtração     |
 |   \*=    |  Atribuição de multiplicação   |
 |    /=    |     Atribuição de divisão      |
-|    %=    | Atribuição de resto de divisão |  
+|    %=    | Atribuição de resto de divisão |
 
 ##### **'Bora praticar!**
 
- - Prática 1 - Faça um programa que calcule o valor gasto de combustível em uma viagem. Neste programa deve haver 3 variáveis (preço do combustível, valor médio de combustível gasto pelo carro (km/L) e a distância da viagem (em km)). Imprima no console o valor que será gasto em combustível para realizar a viagem. [Minha solução](/pt-br/js/praticando/02-p01.js)
+-   Prática 1 - Faça um programa que calcule o valor gasto de combustível em uma viagem. Neste programa deve haver 3 variáveis (preço do combustível, valor médio de combustível gasto pelo carro (km/L) e a distância da viagem (em km)). Imprima no console o valor que será gasto em combustível para realizar a viagem.
+
+**Você pode verificar as soluções [aqui](/pt-br/js/praticando/p00-p96/)**

@@ -63,7 +63,6 @@ const regex = new RegExp("expression");
     3. Use o método .test no "pattern" na etapa 2 para verificar se "quote" tem o padrão
     4. Use o método .match na string "quote" para retornar uma correspondência para a regexp "pattern".
     5. Imprimir os resultados das etapas 3 e 4
-       [Solução](/pt-br/js/praticando/p93.js)
 
 -   Prática 94:
 
@@ -73,7 +72,6 @@ const regex = new RegExp("expression");
     4. Encontre uma correspondência usando .match em "email" com o "emailPattern regex".
     5. Imprimir os resultados de 3 e 4.
        BONUS: O que há de errado com este padrão?
-       [Solução](/pt-br/js/praticando/p94.js)
 
 -   Prática 95: Baseado no exercício 2
 
@@ -83,7 +81,6 @@ const regex = new RegExp("expression");
     4. Encontre uma correspondência usando .match em "email" com o "emailPattern".
     5. Imprimir os resultados de 3 e 4.
        BONUS: O que há de errado com este padrão?
-       [Solução](/pt-br/js/praticando/p95.js)
 
 -   Prática 96:
     1. Criar uma variável chamada "phoneNumber" que aponte para a string: "020-382-6940"
@@ -92,4 +89,5 @@ const regex = new RegExp("expression");
     4. Encontre uma correspondência usando .match no "phoneNumber" com o "phonePattern".
     5. Imprimir os resultados de 3 e 4.
        BONUS: O que há de errado com este padrão?
-       [Solução](/pt-br/js/praticando/p96.js)
+
+**Você pode verificar as soluções [aqui](/pt-br/js/praticando/p00-p96/)**

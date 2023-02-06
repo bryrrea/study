@@ -1,3 +1,5 @@
+Leia em [PT-BR](/pt-br/js/textos/16-modulos.md)
+
 # 16. Modules
 
 ## 16.1. Definition
@@ -73,7 +75,6 @@ There are some conventions for working with modules:
     4. Export "capsLock" as a NAMED export from utils.js
     5. Import "capsLock" inside main.js and call it with any string as an argument, then print the result. Run main.js using Node.
        HINT: Make sure to make a package.json file inside of "warmup" with this inside: { "type": "module" }
-       [Solution](</en/js/practicing/p97-p100(modules)/p97/>)
 
 -   Practice 98:
 
@@ -87,7 +88,6 @@ There are some conventions for working with modules:
     6. Export "greeting" as a DEFAULT export from utils.js
     7. Import both "square" and "greeting" on ONE line inside of main.js. Call both functions to make sure they work as expected. Run main.js using Node.
        HINT: Make sure to make a package.json file inside of "exercise1" with this inside: { "type": "module" }
-       [Solution](</en/js/practicing/p97-p100(modules)/p98/>)
 
 -   Practice 99:
 
@@ -102,7 +102,6 @@ There are some conventions for working with modules:
     5. Inside of modules.js, import "checkMovie" from moduleA.js as well as "topMovies" from moduleB.js. Then, export them both as NAMED exports (This file will both import and export the same variables)
     6. Import both "checkMovie" and "topMovies" on ONE line inside of main.js FROM modules.js. Call "checkMovie" with different movie names to make sure it works. Also, print out "topMovies" to make sure it's the correct array. Run main.js using Node.
        HINT: Make sure to make a package.json file inside of "exercise2" with this inside: { "type": "module" }
-       [Solution](</en/js/practicing/p97-p100(modules)/p99/>)
 
 -   Practice 100:
 
@@ -117,4 +116,5 @@ There are some conventions for working with modules:
     6. Try to predict the order of the print outs when you run main.js. Why might this be?
        BONUS: Why might this make top-level await in modules tricky to use?
        HINT: Make sure to make a package.json file inside of "exercise3" with this inside: { "type": "module" }
-       [Solution](</en/js/practicing/p97-p100(modules)/p100/>)
+
+**You can find practices' solutions [here](/README.md)**.

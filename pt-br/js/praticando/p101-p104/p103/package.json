@@ -1,0 +1,14 @@
+{
+  "name": "p103",
+  "version": "1.0.0",
+  "description": "",
+  "main": "p103.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^11.1.0"
+  }
+}

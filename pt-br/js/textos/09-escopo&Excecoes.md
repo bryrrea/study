@@ -4,7 +4,7 @@
 
 ### 9.1.1. Definição
 
-**Escopo*** é o contexto no qual uma variável é definida. Como em muitas outras linguagens, o JavaScript funciona com dois grandes e distintos escopos: o global e o local.  
+**Escopo\*** é o contexto no qual uma variável é definida. Como em muitas outras linguagens, o JavaScript funciona com dois grandes e distintos escopos: o global e o local.
 
 ### 9.1.2. Escopo global
 
@@ -48,7 +48,7 @@ function differencingGlobalAndLocalScope() {
 
     if (true) {
         const newLocalVariable = "Estou existindo apenas aqui dentro!";
-        console.log(newLocalVariable);       
+        console.log(newLocalVariable);
     }
     console.log(newLocalVariable); // Retorna uma mensagem de erro dizendo que a variável não declarada ainda e o programa para
 };
@@ -65,9 +65,9 @@ Como podemos observar, a `newLocalVariable` existe **apenas** dentro do nível d
 
 ## 9.2. Tratamento de exceção
 
-**Tratamento de exceção** é uma forma de lidar com erros de execução do nosso código. É caracterizado pelo `try...catch` *statement*, em que cada um é um código de nível de bloco.
+**Tratamento de exceção** é uma forma de lidar com erros de execução do nosso código. É caracterizado pelo `try...catch` _statement_, em que cada um é um código de nível de bloco.
 Dentro de um nível de block `try` pode estar o código que será testado para vermos se funciona. Dentro do nível de bloco `catch` pode estar o que deve acontecer quando o nível de bloco `try` falhar. O nível de bloco `catch` recebe um parâmetro - comumente nomeado como "error", "err", ou algo assim. É a mensagem de erro que deve aparecer para informar o programador o que está acontecendo de errado com o código.
-A palavra reservada `throw` é muito importante quando estamos falando sobre tratamento de exceção. Como podemos imaginar, ela "jogará" uma exceção que pode ser "capturada" e tratada com um `try...catch` *statement*.
+A palavra reservada `throw` é muito importante quando estamos falando sobre tratamento de exceção. Como podemos imaginar, ela "jogará" uma exceção que pode ser "capturada" e tratada com um `try...catch` _statement_.
 
 ```javascript
 function divisionOfTwoNumbers(a, b) {
@@ -80,18 +80,18 @@ function divisionOfTwoNumbers(a, b) {
 
 try {
     let division = divisionOfTwoNumbers(1000, 0);
-    
+
     console.log(division); // Vai falhar
-} catch(error) {
+} catch (error) {
     console.error(error); // Error: Não existe divisão por zero.
 }
 ```
 
-No código acima, criei uma função para dividir dois números. Como você deve saber, não há como dividir um número por zero (podemos tratá-lo com cálculo avançado, mas um número não pode ser dividido por zero). Assim, inseri uma exceção na função: se o divisor for zero, o erro será "jogado". Fora da função, criei um `try...catch` *statement* chamando a função e declarando o divisor como zero. A função resolverá "1000/0", então o erro será "capturado" e o texto que escrevi para o erro poderá ser exibido.
+No código acima, criei uma função para dividir dois números. Como você deve saber, não há como dividir um número por zero (podemos tratá-lo com cálculo avançado, mas um número não pode ser dividido por zero). Assim, inseri uma exceção na função: se o divisor for zero, o erro será "jogado". Fora da função, criei um `try...catch` _statement_ chamando a função e declarando o divisor como zero. A função resolverá "1000/0", então o erro será "capturado" e o texto que escrevi para o erro poderá ser exibido.
 
-**IMPORTANTE: qualquer coisa pode ser "jogada" como uma exceção, não apenas uma *string*. Podemos usar objetos, números, o que quisermos!**
+**IMPORTANTE: qualquer coisa pode ser "jogada" como uma exceção, não apenas uma _string_. Podemos usar objetos, números, o que quisermos!**
 
-Como vi em *Promises*, podemos usar `finally` na declaração, que parecerá como `try...catch...finally`. O `finally` recebe um bloco de código que será executado, quer exista ou não uma exceção.
+Como vi em _Promises_, podemos usar `finally` na declaração, que parecerá como `try...catch...finally`. O `finally` recebe um bloco de código que será executado, quer exista ou não uma exceção.
 
 ```javascript
 function divisionOfTwoNumbers(a, b) {
@@ -104,9 +104,9 @@ function divisionOfTwoNumbers(a, b) {
 
 try {
     let division = divisionOfTwoNumbers(1000, 0);
-    
+
     console.log(division); // Vai falhar
-} catch(error) {
+} catch (error) {
     console.error(error); // Error: Não existe divisão por zero..
 } finally {
     console.log("Fim do teste. Esta parte sempre será executada!");
@@ -117,32 +117,37 @@ Eu fiz uma alteração no código anterior para adicionar a declaração `finall
 
 ## 9.3. **'Bora praticar!**
 
-- Prática 57:
+-   Prática 57:
+
     1. Imprimir "Programa iniciado".
     2. Lance um objeto de erro com a mensagem "Uh oh!".
     3. Ao final do programa, imprima "Programa concluído"!
     4. Executar o programa e assistir ao seu travamento.
     5. Criar um bloco de "tentativa...captura" que imprima a mensagem de erro
-    6. Execute o programa novamente e veja a diferença [Solução](/pt-br/js/praticando/p57.js)
+    6. Execute o programa novamente e veja a diferença
 
-- Prática 58:
+-   Prática 58:
+
     1. Crie um laço que faça um loop 10 vezes a partir de 1
     2. Em cada iteração de loop, imprima o número do loop
     3. No loop número 5, "lance" um objeto de erro com a mensagem "Boom!
     4. "Pegue" o erro e imprima o número do laço
-    5. Certifique-se de que o laço vai até 10 [Solução](/pt-br/js/praticando/p58.js)
+    5. Certifique-se de que o laço vai até 10
 
-- Prática 59:
+-   Prática 59:
+
     1. Atribua um objeto a uma variável chamada "user". O Objeto pode ter { name: "Misha", age: 22, settings: { color: "blue" } }
     2. Imprimir "Criando usuário..."
     3. Tente imprimir o "user.profile.color"
     4. Imprimir "Usuário criado!"
     5. Execute o código e observe o comportamento
-    6. Como você consertaria este código (sem alterar os passos 1-4 ou o Objeto do usuário)? Além disso, adicione qualquer registro apropriado que você ache que faz sentido. [Solução](/pt-br/js/praticando/p59.js)
+    6. Como você consertaria este código (sem alterar os passos 1-4 ou o Objeto do usuário)? Além disso, adicione qualquer registro apropriado que você ache que faz sentido.
 
-- Prática 60:
+-   Prática 60:
     1. Criar um bloco "try" que faça: criar uma variável chamada "number" e inicializá-la no número 1337, adicionar um número aleatório entre 0-1000 ao "number" e imprimir "number". Se o número for inferior a 2000, um erro deve ser lançado com a mensagem "You lose!", caso contrário imprima "You win" sem "lançar"/erro.
     2. Criar um bloco `catch` que "captura" o erro e o imprime
     3. Dentro do bloco `catch`, imprimir também o "number".
     4. Qual é o problema com esta configuração/código?
-    5. Como podemos corrigi-lo para que possamos acessar o "number" no `catch`? [Solução](/pt-br/js/praticando/p60.js)
+    5. Como podemos corrigi-lo para que possamos acessar o "number" no `catch`?
+
+**Você pode verificar as soluções [aqui](/pt-br/js/praticando/p00-p96/)**

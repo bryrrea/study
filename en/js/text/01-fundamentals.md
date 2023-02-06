@@ -1,4 +1,4 @@
-[Versão em PT-BR aqui!](/pt-br/js/textos/01-fundamentos.md)  
+[Versão em PT-BR aqui!](/pt-br/js/textos/01-fundamentos.md)
 
 # 1. Fundamentals
 
@@ -146,4 +146,6 @@ Table 4 - Assignment Operators
 
 ## 2. **Let's practice!**
 
-- Practice 1 - Create a program that calculates the amount of fuel spent on a trip. In this program there should be 3 variables (fuel price, average amount of fuel spent by the car (km/L), and the distance of the trip (in km)). Print on the console the amount of fuel that will be spent to make the trip. [My solution](/en/js/practicing/02-p01.js)
+-   Practice 1 - Create a program that calculates the amount of fuel spent on a trip. In this program there should be 3 variables (fuel price, average amount of fuel spent by the car (km/L), and the distance of the trip (in km)). Print on the console the amount of fuel that will be spent to make the trip.
+
+**You can find practices' solutions [here](/README.md)**.

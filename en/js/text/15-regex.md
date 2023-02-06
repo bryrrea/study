@@ -1,3 +1,5 @@
+Leia em [PT-BR](/pt-br/js/textos/15-regex.md)
+
 # 15. Regular Expressions (RegEx)
 
 ## 15.1. Definition
@@ -63,7 +65,6 @@ const regex = new RegExp("expression");
     3. Use the .test method on the "pattern" in step 2 to check if "quote" has the pattern in it
     4. Use the .match method on the "quote" string to return a match for the "pattern" regexp
     5. Print out the results from steps 3 and 4
-       [Solution](/en/js/practicing/p93.js)
 
 -   Practice 94:
 
@@ -73,7 +74,6 @@ const regex = new RegExp("expression");
     4. Find a match using .match on "email" with the "emailPattern regex"
     5. Print out the results from 3 and 4.
        BONUS: What is an issue with this pattern?
-       [Solution](/en/js/practicing/p94.js)
 
 -   Practice 95:
 
@@ -83,7 +83,6 @@ const regex = new RegExp("expression");
     4. Find a match using .match on "email" with the "emailPattern regex"
     5. Print out the results from 3 and 4.
        BONUS: What is an issue with this pattern?
-       [Solution](/en/js/practicing/p95.js)
 
 -   Practice 96:
 
@@ -93,4 +92,5 @@ const regex = new RegExp("expression");
     4. Find a match using .match on "phoneNumber" with the "phonePattern regex"
     5. Print out the results from 3 and 4.
        BONUS: What is an issue with this pattern?
-       [Solution](/en/js/practicing/p96.js)
+
+**You can find practices' solutions [here](/README.md)**.

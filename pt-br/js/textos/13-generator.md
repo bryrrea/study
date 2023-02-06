@@ -69,20 +69,17 @@ Em seguida, vamos praticar um pouco com funções geradoras "regulares". Após, 
 
     1. Crie uma função geradora chamada "countTo10" que produzirá os números 0-10 (inclusive) e depois pare.
     2. Crie o objeto gerador chamando a função geradora e itere através do gerador usando um for...of loop.
-       [Solução](/pt-br/js/praticando/p81.js)
 
 -   Prática 82:
 
     1. Criar uma função geradora chamada "randomNumber" que irá gerar um novo número aleatório infinitamente
     2. Use um loop para gerar 10 números aleatórios usando o Objeto gerador que você obtém ao chamar "randomNumber".
-       [Solução](/pt-br/js/praticando/p82.js)
 
 -   Prática 83:
 
     1. Criar uma função geradora chamada "randomAmountFromRange" que tem 3 parâmetros: amount, min e max
     2. Esta função gerará a quantidade de números aleatórios fornecidos como argumento, entre o min e o max (inclusive), por exemplo: randomAmountFromRange(3, 10, 20) => 13, 12, 19
     3. Crie um for...of loop que irá percorrer através dos seguintes objetos geradores para testá-lo: - randomAmountFromRange(3, 10, 20) - randomMountFromRange(5, 100, 200) - randomMountFromRange(10, 1000, 2000)
-       [Solução](/pt-br/js/praticando/p83.js)
 
 -   Prática 84:
     1. Criar uma função geradora chamada "getRandomNumber" que gera um número aleatório entre 1-10 (inclusive)
@@ -96,7 +93,8 @@ Em seguida, vamos praticar um pouco com funções geradoras "regulares". Após, 
     4. Crie um laço for regular para rodar 5 vezes e chamar o método .next() em cada um dos Objetos geradores para imprimir um número aleatório seguido de um item de compra aleatório:
        Ex: 5 Abacate
        10 Sopa
-       [Solução](/pt-br/js/praticando/p84.js)
+
+**Você pode verificar as soluções [aqui](/pt-br/js/praticando/p00-p96/)**
 
 ## 13.5. Geradores assíncronos
 
@@ -264,7 +262,6 @@ No exemplo acima, parte da função geradora `secondGenerator()` transfere o flu
     1. Criar uma função geradora assíncrona que produza uma promessa que se resolve após 1 segundo com um número entre 0-9 (inteiro e inclusivo)
     2. Crie o objeto gerador chamando a função
     3. Use um for-await-of loop para percorrer o gerador infinitamente (ctrl-c para forçar a saída do programa)
-       [Solução](/pt-br/js/praticando/p85.js)
 
 -   Prática 86:
 
@@ -273,7 +270,6 @@ No exemplo acima, parte da função geradora `secondGenerator()` transfere o flu
         - Resolver depois de 3000ms com o valor "Slow!".
     2. Crie o objeto gerador chamando a função
     3. Use um for-await-of loop para percorrer o gerador infinitamente (ctrl-c para forçar a saída do programa)
-       [Solução](/pt-br/js/praticando/p86.js)
 
 -   Prática 87:
 
@@ -282,7 +278,6 @@ No exemplo acima, parte da função geradora `secondGenerator()` transfere o flu
         - Caso contrário, resolva com a letra, mas em maiúscula
     2. Crie o objeto gerador chamando a função com um valor de "Monkeys are the coolest animal!"
     3. Use um for-await-of- loop para percorrer o gerador. Há MUITAS maneiras de verificar se uma string tem alguma das letras
-       [Solução](/pt-br/js/praticando/p87.js)
 
 -   Prática 88:
 
@@ -294,4 +289,5 @@ No exemplo acima, parte da função geradora `secondGenerator()` transfere o flu
        for await (const time of timeGeneratorObject)
         - Se imprimirmos o "time" de cada laço, receberíamos:
         - 100, 200, 400, 800, 1600, 1600, 3200 ... etc.
-          [Solução](/pt-br/js/praticando/p88.js)
+
+**Você pode verificar as soluções [aqui](/pt-br/js/praticando/p00-p96/)**

@@ -6,7 +6,7 @@ Para ler em pt-BR, [clique aqui](/pt-br/js/textos/09-escopo%26Excecoes.md)
 
 ### 9.1.1. Definition
 
-**Scope** is the context which a variable is defined. As in many other languages, JavaScript works with two big and distinguished scopes: the global and the local scopes.  
+**Scope** is the context which a variable is defined. As in many other languages, JavaScript works with two big and distinguished scopes: the global and the local scopes.
 
 ### 9.1.2. Global scope
 
@@ -20,11 +20,12 @@ When we talk about **local scope**, we are talking about a variable who lies onl
 const globalVariable = "I can be accessed wherever you want!";
 
 function differencingGlobalAndLocalScope() {
-    const localVariable = "I exist only inside this function and I can be called only inside this function as well!";
+    const localVariable =
+        "I exist only inside this function and I can be called only inside this function as well!";
 
     console.log(globalVariable); // I can be accessed wherever you want!
     console.log(localVariable); // I exist only inside this function and I can be called only inside this function as well!
-};
+}
 
 differencingGlobalAndLocalScope();
 
@@ -43,18 +44,19 @@ Let's make a slightly change in the previous program:
 const globalVariable = "I can be accessed wherever you want!";
 
 function differencingGlobalAndLocalScope() {
-    const localVariable = "I exist only inside this function and I can be called only inside this function as well!";
+    const localVariable =
+        "I exist only inside this function and I can be called only inside this function as well!";
 
     console.log(globalVariable); // I can be accessed wherever you want!
     console.log(localVariable); // I exist only inside this function and I can be called only inside this function as well!
 
     if (true) {
         const newLocalVariable = "I'm existing only here!";
-        console.log(newLocalVariable);       
+        console.log(newLocalVariable);
     }
 
     console.log(newLocalVariable); // Returns an error message saying the variable wasn't declared yet and the program stops here
-};
+}
 
 differencingGlobalAndLocalScope(); // Returns an error message saying the variable wasn't declared yet
 
@@ -82,9 +84,9 @@ function divisionOfTwoNumbers(a, b) {
 
 try {
     let division = divisionOfTwoNumbers(1000, 0);
-    
+
     console.log(division); // will fail
-} catch(error) {
+} catch (error) {
     console.error(error); // Error: There is no such thing like division by zero.
 }
 ```
@@ -106,9 +108,9 @@ function divisionOfTwoNumbers(a, b) {
 
 try {
     let division = divisionOfTwoNumbers(1000, 0);
-    
+
     console.log(division); // will fail
-} catch(error) {
+} catch (error) {
     console.error(error); // Error: There is no such thing like division by zero.
 } finally {
     console.log("End of the test. This part will always be executed!");
@@ -119,32 +121,37 @@ I improved the previous code with a `finally` statement. The message I wrote the
 
 ## 9.3. **Let's practice!**
 
-- Practice 57:
+-   Practice 57:
+
     1. Print out "Program started"
     2. Throw an Error Object with the message "Uh oh!"
     3. At the end of the program, print out "Program completed!"
     4. Run the program and watch it crash
     5. Create a `try...catch` block that print out the error message
-    6. Run the program again and see the difference [Solution](/en/js/practicing/p57.js)
+    6. Run the program again and see the difference
 
-- Practice 58:
+-   Practice 58:
+
     1. Create a loop that loops 10 times starting at 1
     2. On each loop iteration, print out the loop number
     3. On loop number 5, throw an Error Object with the message "Boom!"
     4. Catch the error and print out the loop number
-    5. Make sure the loop goes all the way to 10 [Solution](/en/js/practicing/p58.js)
+    5. Make sure the loop goes all the way to 10
 
-- Practice 59:
+-   Practice 59:
+
     1. Assign an object to a variable called "user". The object may have { name: "Misha", age: 22, settings: { color: "blue" } }
     2. Print out "Creating user..."
     3. Try to print out "user.profile.color"
     4. Print out "User created!"
     5. Run the code and observe the behavior
-    6. How would you fix this code (without changing steps 1-4 or the user Object)? Also, add any appropriate logging you fell makes sense. [Solution](/en/js/practicing/p59.js)
+    6. How would you fix this code (without changing steps 1-4 or the user Object)? Also, add any appropriate logging you fell makes sense.
 
-- Practice 60:
+-   Practice 60:
     1. Create a `try` block that does the following: create a variable called "number" and initialize it to the number 1337, add a random number between 0-1000 to "number", and print out "number. If the number is lower than 2000, an Error should be threw with the message "You lose!", otherwise print out "You win" without throw/error
     2. Create a `catch` block that catches the error and print out it
     3. Inside the `catch` block, print out "number" as well
     4. What is the issue with this setup/code?
-    5. How can we fix it so we can access "number" in the `catch`? [Solution](/en/js/practicing/p60.js)
+    5. How can we fix it so we can access "number" in the `catch`?
+
+**You can find practices' solutions [here](/README.md)**.

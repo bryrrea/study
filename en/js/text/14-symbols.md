@@ -1,3 +1,5 @@
+Leia em [PT-BR](/pt-br/js/textos/14-symbols.md)
+
 # 14. Symbols (`Symbols()`)
 
 ## 14.1. Definition
@@ -84,7 +86,6 @@ There are various modules that can be used with the `Symbol` function. Therefore
     1. Create a variable called "baboon" that points to a Symbol with a description of "Monkey"
     2. Create a variable called "gorilla" that points to a Symbol with a description of "Monkey" as well
     3. Print out the types of each of the symbols as well as their description property 4. Are the two symbols equivalent? (Equality check) Why or why not?
-       [Solution](/en/js/practicing/p89.js)
 
 -   Practice 90:
 
@@ -96,7 +97,6 @@ There are various modules that can be used with the `Symbol` function. Therefore
        [Symbol("boxOffice")]: 41.6
     3. Use a for-of loop to loop through all the entries inside "movie" and print out their key-value pairs:
        Eg: name => Blade Runner, director => Ridley Scott 4. How would you access and print out the symbols in "movie"?
-       [Solution](/en/js/practicing/p90.js)
 
 -   Practice 91:
 
@@ -105,7 +105,6 @@ There are various modules that can be used with the `Symbol` function. Therefore
        rating: 4.6, genre: "Science Fiction", movie: true }
     2. Create a Symbol.iterator property on "book" that will allow you to loop over it using a for-of-loop that will give you back the key-value pairs each loop as a paired array (similar to a Map): ["name", "1984"] ["rating", 4.6]
     3. Test your loop with a for-of-loop to make sure it works
-       [Solution](/en/js/practicing/p91.js)
 
 -   Practice 92:
 
@@ -114,4 +113,5 @@ There are various modules that can be used with the `Symbol` function. Therefore
        rating: 4.6, genre: "Science Fiction", movie: true }
     2. Create a Symbol.asyncIterator property on "book" that will allow you to loop over it using a for-await-of-loop that will give you back the key-value pairs each loop but delayed by 1 second each as a paired array (similar to a Map): ["name", "1984"] ["rating", 4.6]
     3. Test your loop with a for-await-of-loop to make sure it works
-       [Solution](/en/js/practicing/p92.js)
+
+**You can find practices' solutions [here](/README.md)**.

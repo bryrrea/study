@@ -73,7 +73,6 @@ Há algumas convenções para trabalharmos com módulos:
     4. Exporte "capsLock" como uma exportação NOMEADA de utils.js
     5. Importe "capsLock" dentro de main.js e chame-a com qualquer string como argumento, em seguida, imprima o resultado. Execute main.js usando o Node.
        DICA: Certifique-se de criar um arquivo package.json dentro de "warmup" com isto dentro: { "type": "module" }
-       [Solução](</pt-br/js/praticando/p97AoP100(modulos)/p97>)
 
 -   Prática 98:
 
@@ -87,7 +86,6 @@ Há algumas convenções para trabalharmos com módulos:
     6. Exporte "greeting" como uma exportação DEFAULT de utils.js
     7. Importe tanto "square" quanto "greeting" em UMA linha dentro de main.js. Chame ambas as funções para garantir que funcionem como esperado. Execute main.js usando Node.
        DICA: Certifique-se de criar um arquivo package.json dentro de "exercise1" com isto dentro: { "type": "module" }
-       [Solução](</pt-br/js/praticando/p97AoP100(modulos)/p98>)
 
 -   Prática 99:
 
@@ -102,7 +100,6 @@ Há algumas convenções para trabalharmos com módulos:
     5. Dentro de modules.js, importe "checkMovie" de moduleA.js e "topMovies" de moduleB.js. Em seguida, exporte-os ambos como exportações NAMED (Este arquivo importará e exportará as mesmas variáveis)
     6. Importe tanto "checkMovie" quanto "topMovies" em uma única linha dentro de main.js de modules.js. Chame "checkMovie" com nomes de filmes diferentes para garantir que funcione. Além disso, imprima "topMovies" para garantir que é o array correto. Execute main.js usando Node.
        DICA: Certifique-se de criar um arquivo package.json dentro de "exercise2" com isso dentro: { "type": "module" }
-       [Solução](</pt-br/js/praticando/p97AoP100(modulos)/p99>)
 
 -   Prática 100:
 
@@ -117,4 +114,5 @@ Há algumas convenções para trabalharmos com módulos:
     6. Tente prever a ordem das impressões quando você executar main.js. Por que isso pode acontecer?
        BÔNUS: Por que isso pode tornar o top-level await em módulos complicado de usar?
        DICA: Certifique-se de criar um arquivo package.json dentro de "exercise3" com isso dentro: { "type": "module" }
-       [Solução](</pt-br/js/praticando/p97AoP100(modulos)/p100>)
+
+**Você pode verificar as soluções [aqui](/pt-br/js/praticando/p00-p96/)**

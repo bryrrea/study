@@ -71,20 +71,17 @@ Next, let's practice a little with "regular" generator functions. After, let's s
 
     1. Create a generator function called "countTo10" that will yield the numbers 0-10 (inclusive) then stop.
     2. Create the generator object by calling the generator function and iterate through the generator using a for...of loop.
-       [Solution](/en/js/practicing/p81.js)
 
 -   Practice 82:
 
     1. Create a generator function called "randomNumber" that will generate a new random number infinitely
     2. Use a loop to generate 10 random numbers using the generator Object you get from calling "randomNumber"
-       [Solution](/en/js/practicing/p82.js)
 
 -   Practice 83:
 
     1. Create a generator function called "randomAmountFromRange" which has 3 parameters: amount, min, and max
     2. This function will generate the amount of random numbers provided as an argument, between the min and max (inclusive), Eg: randomAmountFromRange(3, 10, 20) => 13, 12, 19
     3. Create a for...of loop that will loop through the following generator objects to test it: - randomAmountFromRange(3, 10, 20) - randomAmountFromRange(5, 100, 200) - randomAmountFromRange(10, 1000, 2000)
-       [Solution](/en/js/practicing/p83.js)
 
 -   Practice 84:
     1. Create a generator function called "getRandomNumber" that generates a random number between 1-10 (inclusive)
@@ -98,7 +95,8 @@ Next, let's practice a little with "regular" generator functions. After, let's s
     4. Create a regular for loop that will loop 5 times and calls .next() on each of the generator Objects ^ to print out a random number followed by a random grocery:
        Eg: 5 Avocado
        10 Soup
-       [Solution](/en/js/practicing/p84.js)
+
+**You can find practices' solutions [here](/README.md)**
 
 ## 13.5. Async generators
 
@@ -267,7 +265,6 @@ In the example above, part of the generator function `secondGenerator()` transfe
        number between 0-9 (integer and inclusive)
     2. Create the generator object by calling the function
     3. Use a for-await-of loop to loop through the generator indefinitely (ctrl-c to force exit the program)
-       [Solution](/en/js/practicing/p85.js)
 
 -   Practice 86:
 
@@ -276,7 +273,6 @@ In the example above, part of the generator function `secondGenerator()` transfe
         - Resolve after 3000ms with the value "Slow!"
     2. Create the generator object by calling the function
     3. Use a for-await-of loop to loop through the generator indefinitely (ctrl-c to force exit the program)
-       [Solution](/en/js/practicing/p86.js)
 
 -   Practice 87:
 
@@ -286,7 +282,6 @@ In the example above, part of the generator function `secondGenerator()` transfe
         - Otherwise resolve with the letter, but in uppercase
     2. Create the generator object by calling the function with a value of "Monkeys are the coolest animal!"
     3. Use a for-await-of loop to loop through the generator. There are MANY ways to check if a string has any of several letters
-       [Solution](/en/js/practicing/p87.js)
 
 -   Practice 88:
 
@@ -298,4 +293,5 @@ In the example above, part of the generator function `secondGenerator()` transfe
        for await (const time of timeGeneratorObject)
         - If we print "time" each loop we'd get:
         - 100, 200, 400, 800, 1600, 3200 ... etc
-          [Solution](/en/js/practicing/p88.js)
+
+**You can find practices' solutions [here](/README.md)**.

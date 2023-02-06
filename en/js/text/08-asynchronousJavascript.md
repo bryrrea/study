@@ -42,7 +42,7 @@ let okay = document.querySelector("#confirmUpdateDialog button.okay");
 okay.addEventListener("click", applyUpdate);
 ```
 
-In the code above, the browser is asked to return an object representing the HTML `<button>` element that contains a specific id ("*#confirmUpdateDialog button.okay*"). After that, the `addEventListener()` module is called to execute a callback function (`applyUpdate()`) when the user clicks on that button. This function is registered as an event listener for the "*click*" event.
+In the code above, the browser is asked to return an object representing the HTML `<button>` element that contains a specific id ("_#confirmUpdateDialog button.okay_"). After that, the `addEventListener()` module is called to execute a callback function (`applyUpdate()`) when the user clicks on that button. This function is registered as an event listener for the "_click_" event.
 These are just a few examples of the uses of callback functions, but these functions are not limited to time or to receive information after a user action. There are many other applications, such as consuming APIs, for example.
 
 ## 8.3. Promise
@@ -78,24 +78,25 @@ const myPromise = new Promise((resolve, reject) => {
     setTimeout(() => {
         resolve("Hello, my friend!");
     }, 2000);
-})
+});
 
 myPromise
-    .then(message => message.toUpperCase())
-    .then(message => console.log(message))
-    .catch(error => console.log(error))
-    .finally(() => console.log("Finally!"))
+    .then((message) => message.toUpperCase())
+    .then((message) => console.log(message))
+    .catch((error) => console.log(error))
+    .finally(() => console.log("Finally!"));
 ```
 
-### 8.3.4. **Let's practice!**  
+### 8.3.4. **Let's practice!**
 
-- Practice 52: Print out "Program Started" at the start of your code. Then, create a Promise that resolves after 3 seconds. Show the Promise while it's pending. Next, print out "Program in progress..." and, finally, print out "Program completed" when the Promise completes after 3 seconds. [Solution](/en/js/practicing/p52.js)
+-   Practice 52: Print out "Program Started" at the start of your code. Then, create a Promise that resolves after 3 seconds. Show the Promise while it's pending. Next, print out "Program in progress..." and, finally, print out "Program completed" when the Promise completes after 3 seconds.
 
-- Practice 53: Print out "Program Started" at the start of your code. Then, create a Promise that resolves after 3 seconds and rejects after 2 seconds. Show the Promise while it's pending. Next, print out "Program in progress..." and, finally, print out "Program completed" if the Promise fulfills or "Program failure" if the Promise rejects. [Solution](/en/js/practicing/p53.js)
+-   Practice 53: Print out "Program Started" at the start of your code. Then, create a Promise that resolves after 3 seconds and rejects after 2 seconds. Show the Promise while it's pending. Next, print out "Program in progress..." and, finally, print out "Program completed" if the Promise fulfills or "Program failure" if the Promise rejects.
 
-- Practice 54: Print out "Program Started" at the start of your code. Then, create a Promise that resolves after 3 seconds. Show the Promise while it's pending. Next, print out "Program in progress...". After, print out "Step 1 completed!" when the firs Promise fulfills. Make the first Promise return a new Promise that will fulfill after 3 seconds with the message "Step 2 completed!". Finally, print out the message from the second Promise after it fulfills. [Solution](/en/js/practicing/p54.js)
+-   Practice 54: Print out "Program Started" at the start of your code. Then, create a Promise that resolves after 3 seconds. Show the Promise while it's pending. Next, print out "Program in progress...". After, print out "Step 1 completed!" when the firs Promise fulfills. Make the first Promise return a new Promise that will fulfill after 3 seconds with the message "Step 2 completed!". Finally, print out the message from the second Promise after it fulfills.
 
-- Practice 55:
+-   Practice 55:
+
     1. Print out "Program started" at the start of your code
     2. Create a Promise that resolves after 5 seconds with the value {data: "Hello, friend", error: null}
     3. Print out the Promise while it's pending
@@ -105,9 +106,11 @@ myPromise
     7. Print out the message from the above Promise after it fulfills
     8. Create a second Promise chain using the Promise above and print out the resolved value when the second Promise fulfills
     9. Make this second Promise return another Promise that will fulfill after 10 seconds with the message "Second Promise chain completed!"
-    10. Print out the message from the above Promise after it fulfills [Solution](/en/js/practicing/p55.js)
+    10. Print out the message from the above Promise after it fulfills
 
-- Practice 56: Create a Promise that resolver with the number 10 after 3 seconds. Next, create another Promise that resolves withe the number 20 after 5 seconds. How can we compute the sum of these two resolved values after both promises successfully fulfill? [Solution](/en/js/practicing/p56.js)
+-   Practice 56: Create a Promise that resolver with the number 10 after 3 seconds. Next, create another Promise that resolves withe the number 20 after 5 seconds. How can we compute the sum of these two resolved values after both promises successfully fulfill?
+
+**You can find practices' solutions [here](/README.md)**.
 
 ## 8.4. `async`/`await`
 
@@ -146,11 +149,11 @@ With `async`/`await` it is even simpler, because we just put the block of code i
 const anyFunction = async () => {
     try {
         const anyVariable = await code here;
-        
+
         return anyVariable;
         } catch(error) {
             console.error(error);
-        } 
+        }
 }
 ```
 
@@ -167,7 +170,7 @@ function getPokemonURL(pokemonNumber) {
     return `https://pokeapi.co/api/v2/pokemon/${pokemonNumber}`;
 }
 
-const getPokemonData = async () => {    
+const getPokemonData = async () => {
     const pokemonData1 = fetch(getPokemonURL(1));
     const pokemonData2 = fetch(getPokemonURL(2));
     const pokemonData24 = fetch(getPokemonURL(24));
@@ -175,13 +178,13 @@ const getPokemonData = async () => {
     const pokemonsDataArray = await Promise.all([
         pokemonData1,
         pokemonData2,
-        pokemonData24
+        pokemonData24,
     ]);
 
-    for(let pokemonsData of pokemonsDataArray) {
+    for (let pokemonsData of pokemonsDataArray) {
         console.log(pokemonsData);
     }
-}
+};
 
 getPokemonData();
 ```
@@ -192,7 +195,8 @@ A function was created to automate the URL of the Pokémon from which we want to
 
 ### 8.4.5. **Let's practice!**
 
-- Practice 61:
+-   Practice 61:
+
     1. Create a function called "fetchPokemon" that returns a Promise that resolves with the value `{data: {name: "Pikachu", power: 20} } after 2 seconds
     2. Print out "Program starting..."
     3. Create an async function that uses await to wait for the data to comer back from "fetchPokemon" then log out the data
@@ -203,7 +207,8 @@ A function was created to automate the URL of the Pokémon from which we want to
 
     [Solution](/en/js/practicing/p61.js)
 
-- Practice 62:
+-   Practice 62:
+
     1. Create a function called "fetchUser" that returns a Promise that resolves with the value `{data: {user: "Monkey", admin: true} } after 3 seconds
     2. Create a function called "login" that takes an Object as an argument. If the Object has a property called admin with a value of true, then log out "Successfully logged in!", otherwise log out "Failed to log in, please try again."
     3. Print out "Program starting..."
@@ -214,7 +219,8 @@ A function was created to automate the URL of the Pokémon from which we want to
 
     [Solution](/en/js/practicing/p62.js)
 
-- Practice 63:
+-   Practice 63:
+
     1. Create a function called "fetchFast" that returns a Promise that resolves with the String "Fast Done!" after 2 seconds
     2. Create a function called "fetchSlow" that returns a Promise that resolves with the String "Slow Done!" after 6 seconds
     3. Print out "Program starting..."
@@ -226,16 +232,17 @@ A function was created to automate the URL of the Pokémon from which we want to
 
     [Solution](/en/js/practicing/p63.js)
 
-- Practice 64:
+-   Practice 64:
+
     1. Create a function called "goGetCandies" which will return a Promise Object that resolves to { candy: "sour keys", quantity: 10 } after 2 seconds
-    2. Create a function called "sellCandies" that will take a candy Object and return a Number that is .25 * quantity. This will be how much (in cents) we get for our candies. However, make this function take 3 seconds to do this math
+    2. Create a function called "sellCandies" that will take a candy Object and return a Number that is .25 \* quantity. This will be how much (in cents) we get for our candies. However, make this function take 3 seconds to do this math
     3. Create an async function that uses await to:
-        a. Get the candy Object from goGetCandies()
-        b. Passes it to "sellCandies" and waits for the response
-        c. Prints out how much money we made from our sale
+       a. Get the candy Object from goGetCandies()
+       b. Passes it to "sellCandies" and waits for the response
+       c. Prints out how much money we made from our sale
 
     4. Do the same steps as #3, but with vanilla Promises:
-        Q1: Which of these 2 methods do you prefer?
-        Q2: Which of these 2 methods is easier to read?
+       Q1: Which of these 2 methods do you prefer?
+       Q2: Which of these 2 methods is easier to read?
 
     [Solution](/en/js/practicing/p64.js)

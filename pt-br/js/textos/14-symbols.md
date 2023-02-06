@@ -85,7 +85,6 @@ São diversos módulos que podem ser utilizados com a função `Symbol`. Por iss
     2. Criar uma variável chamada "gorilla" que também aponta para um Símbolo com uma descrição de "Monkey"
     3. Imprimir os tipos de cada um dos símbolos, assim como sua propriedade de descrição
     4. Os dois símbolos são equivalentes? (Verificação de igualdade) Por que ou por que não?
-       [Solution](/en/js/practicing/p89.js)
 
 -   Prática 90:
 
@@ -98,7 +97,6 @@ São diversos módulos que podem ser utilizados com a função `Symbol`. Por iss
     3. Escreva um for-of loop para percorrer as entradas de "movie" e imprima os pares chave/valor:
        Ex: name => Blade Runner, director => Ridley Scott
     4. Como podemos acessar e imprimir os Símbolos em "movie"?
-       [Solution](/en/js/practicing/p90.js)
 
 -   Prática 91:
 
@@ -107,7 +105,6 @@ São diversos módulos que podem ser utilizados com a função `Symbol`. Por iss
        rating: 4.6, genre: "Science Fiction", movie: true }
     2. Crie uma propriedade em "book" que contenha um Symbol.iterator para utilizar um for-of-loop para percorrer o Objeto e devolver os pares chave/valor como um Array de pares (similar à um Map): ["name", "1984"] ["rating", 4.6]
     3. Teste o loop com um for-of-loop para ver se está funcionando
-       [Solution](/en/js/practicing/p91.js)
 
 -   Prática 92:
 
@@ -116,4 +113,5 @@ São diversos módulos que podem ser utilizados com a função `Symbol`. Por iss
        rating: 4.6, genre: "Science Fiction", movie: true }
     2. Crie uma propriedade em "book" que contenha um Symbol.asyncIterator que permita percorrer o Objeto utilizando um for-await-of-loop que retorne os pares chave/valor com um atraso de 1 segundo para cada par. Os pares devem ser dispostos como Arrays de pares (como em um Map): ["name", "1984"] ["rating", 4.6]
     3. Teste o loop com um for-await-of-loop para ver se está funcionando
-       [Solution](/en/js/practicing/p92.js)
+
+**Você pode verificar as soluções [aqui](/pt-br/js/praticando/p00-p96/)**

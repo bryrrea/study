@@ -18,9 +18,9 @@ for (let index = 0; index < array.length; index++) {
 
 Let's brake the code above:
 
-- **"`let index = 0`"** is creating a variable called `"index"` and it is starting with the value (index) "0" (almost all programming languages starting the index from zero).
-- **"`index < array.length`"** is a boolean structure to check if a condition is true or false.
-- **"`index++`"** is incrementing the variable `"index"` by one unit. It can be incremented by more than one unit if you want.  
+-   **"`let index = 0`"** is creating a variable called `"index"` and it is starting with the value (index) "0" (almost all programming languages starting the index from zero).
+-   **"`index < array.length`"** is a boolean structure to check if a condition is true or false.
+-   **"`index++`"** is incrementing the variable `"index"` by one unit. It can be incremented by more than one unit if you want.
 
 ### 3.1.2. While loop
 
@@ -107,6 +107,8 @@ I created a variable to import the modules from the script "checkingNumbers.js".
 
 ## 3.3. **Let's practice!**
 
-- Practice 10: Create a program to calculate the multiplication table of a number. [My solution](/en/js/practicing/11-p10.js)
+-   Practice 10: Create a program to calculate the multiplication table of a number.
 
-- Practice 11: Create a program that runs through a list of numbers to return only the even numbers in this list. [My solution](/en/js/practicing/12-p11.js)
+-   Practice 11: Create a program that runs through a list of numbers to return only the even numbers in this list.
+
+**You can find practices' solutions [here](/README.md)**.
