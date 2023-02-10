@@ -45,6 +45,7 @@ Espero que seja de grande valia a quem precisar! Bons estudos e bom proveito! o/
 | [15 - Expressões Regulares (RegEx)](./js/textos/15-regex.md)                                |
 | [16 - Módulos](./js/textos/16-modulos.md)                                                   |
 | [17 - NPM](./js/textos/17-npm.md)                                                           |
+| [18 - Fetch API](./js/textos/18-fetch.md)                                                   |
 
 ## Sumário (Práticas JS)
 
