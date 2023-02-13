@@ -152,10 +152,14 @@ Espero que seja de grande valia a quem precisar! Bons estudos e bom proveito! o/
 | [Prática 98](./js/praticando/p97-p100/p98/)                                 |
 | [Prática 99](./js/praticando/p97-p100/p99/)                                 |
 | [Prática 100](./js/praticando/p97-p100/p100/)                               |
-| [Prática 101](./js/praticando/p101-p104/p101/)                              |
-| [Prática 102](./js/praticando/p101-p104/p102/)                              |
-| [Prática 103](./js/praticando/p101-p104/p103/)                              |
-| [Prática 104](./js/praticando/p101-p104/p104/)                              |
+| [Prática 101](./js/praticando/p101-p104/p101/main.js)                       |
+| [Prática 102](./js/praticando/p101-p104/p102/main.js)                       |
+| [Prática 103](./js/praticando/p101-p104/p103/main.js)                       |
+| [Prática 104](./js/praticando/p101-p104/p104/hello.js)                      |
+| [Prática 104](./js/praticando/p105-p108/p105.js)                            |
+| [Prática 104](./js/praticando/p105-p108/p106.js)                            |
+| [Prática 104](./js/praticando/p105-p108/p107.js)                            |
+| [Prática 104](./js/praticando/p105-p108/p108.js)                            |
 
 ## Fonte dos estudos e práticas em JavaScript
 

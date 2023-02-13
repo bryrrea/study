@@ -172,3 +172,32 @@ getData();
 A função acima utiliza `Promise.all()` para fazer as duas requisições paralelas assincronamente e, após, converte os dados para JSON assincronamente para imprimir no console. O resultado obtido é idêntico ao anterior, e pode ser observado na imagem abaixo:
 
 ![Resultado da requisição assíncrona paralela](/src/10.png)
+
+## 18.5. **'Bora praticar!**
+
+-   Prática 105:
+
+    1. Instale o node-fetch se sua versão do Node for inferior a 18 usando NPM e importe-o em seu arquivo (estilo ES Module)
+    2. Faça uma solicitação para: https://www.craigslist.org/about/ e imprima a string HTML resultante (texto) usando Fetch
+    3. Compare o que você vê no Node com a visita à página real no seu navegador - o que corresponde?
+
+-   Prática 106:
+
+    1. Instale o node-fetch se sua versão do Node for inferior a 18 usando NPM e importe-o em seu arquivo (estilo ES Module)
+    2. Faça uma solicitação para: https://jsonplaceholder.typicode.com/posts/1 e imprima o JSON resultante usando Fetch
+       BÔNUS: Como isso difere do conteúdo de texto e o que o fetch pode estar fazendo com a resposta JSON para nós?
+
+-   Prática 107:
+
+    1. Instale o node-fetch se sua versão do Node for inferior a 18 usando NPM e importe-o em seu arquivo (estilo ES Module)
+    2. Dê uma lida em pokeapi.co
+    3. Faça uma solicitação para: https://pokeapi.co/api/v2/pokemon/pikachu e imprima a URL da "obra-oficial" do Pikachu para a sua imagem (png). Visite essa URL para garantir que funcione usando seu navegador.
+       DICA: Tenha cuidado com o nome das chaves aqui ao tentar acessar o JSON parceado
+
+-   Prática 108:
+
+    1. Instale o node-fetch se sua versão do Node for inferior a 18 usando NPM, e importe-o no seu arquivo (estilo ES Module)
+    2. Importe "fs" de "fs/promises", que é nativo do NodeJS (não precisa de uma instalação NPM)
+    3. Vá ao "wallhaven.cc" e encontre um papel de parede que você goste. Visite a página do papel de parede e clique com o botão direito no papel de parede e "abra a imagem em uma nova guia" para ter apenas a imagem em uma guia. A URL deve terminar com .png ou .jpg. Exemplo: https://w.wallhaven.cc/full/7p/wallhaven-7p39gy.png
+    4. Use fetch para obter esta imagem e parceá-la corretamente. Em seguida, use "fs" para escrever um arquivo em seu sistema de arquivos com a imagem em si, para que você possa abri-lo após executar o script. Observe que essas funções em fs retornam Promises.
+       Isso é propositalmente desafiador e exigirá muitas pesquisas na internet para ver como parcear a imagem e salvar usando Node.
